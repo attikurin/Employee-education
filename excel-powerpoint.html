@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel/PowerPoint実践講座 | 社員教育総合ガイド 2025年版</title>
+    <meta name="description" content="業務で即使えるExcel・PowerPointの実践的スキルを習得。データ分析、関数、グラフ、プレゼン資料作成のテクニック">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <div>
+                <h1><i class="fas fa-graduation-cap"></i> 社員教育総合ガイド</h1>
+                <p class="subtitle">2025年版 ～新入社員から中堅社員まで～</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインナビゲーション -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> ホーム</a></li>
+                <li><a href="life100.html"><i class="fas fa-seedling"></i> 人生100年時代</a></li>
+                <li><a href="basic-skills.html"><i class="fas fa-users"></i> 社会人基礎力</a></li>
+                <li><a href="business-manner.html"><i class="fas fa-handshake"></i> ビジネスマナー</a></li>
+                <li><a href="beginner-guide.html"><i class="fas fa-user-graduate"></i> 新入社員ガイド</a></li>
+                <li><a href="business-writing.html"><i class="fas fa-pen"></i> ビジネス文書</a></li>
+                <li><a href="excel-powerpoint.html" class="active"><i class="fas fa-table"></i> Excel/PowerPoint</a></li>
+                <li><a href="logical-thinking.html"><i class="fas fa-brain"></i> ロジカルシンキング</a></li>
+                <li><a href="trends.html"><i class="fas fa-chart-line"></i> 研修トレンド</a></li>
+                <li><a href="design-tools.html"><i class="fas fa-tools"></i> 研修設計・ツール</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="container">
+        <section id="excel-powerpoint" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-table"></i> Excel/PowerPoint実践講座</h2>
+                <p class="lead">業務で即使えるExcel・PowerPointの実践的スキルを身につけます。基本操作からビジネスシーンで役立つテクニックまで網羅。</p>
+
+                <!-- イントロダクション -->
+                <div class="intro-message">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h3>なぜExcel/PowerPointスキルが重要なのか</h3>
+                        <p>ExcelとPowerPointは、ビジネスパーソンにとって必須のツールです。データ分析、資料作成、プレゼンテーションなど、あらゆる業務で活用されます。効率的に使いこなすことで、生産性が劇的に向上し、業務の質も高まります。</p>
+                    </div>
+                </div>
+
+                <!-- 目次 -->
+                <div class="guide-toc">
+                    <h3><i class="fas fa-list"></i> 目次</h3>
+                    <div class="toc-grid">
+                        <a href="#excel-basics" class="toc-item">
+                            <i class="fas fa-file-excel"></i>
+                            <h4>1. Excel基礎と実践</h4>
+                            <p>基本操作、関数、データ分析</p>
+                        </a>
+                        <a href="#excel-functions" class="toc-item">
+                            <i class="fas fa-function"></i>
+                            <h4>2. Excel必須関数</h4>
+                            <p>SUM、AVERAGE、IF、VLOOKUPなど</p>
+                        </a>
+                        <a href="#excel-charts" class="toc-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <h4>3. グラフ・ピボットテーブル</h4>
+                            <p>データの可視化と集計</p>
+                        </a>
+                        <a href="#powerpoint-basics" class="toc-item">
+                            <i class="fas fa-file-powerpoint"></i>
+                            <h4>4. PowerPoint基礎</h4>
+                            <p>スライド作成の基本原則</p>
+                        </a>
+                        <a href="#powerpoint-design" class="toc-item">
+                            <i class="fas fa-palette"></i>
+                            <h4>5. 資料デザインの基本</h4>
+                            <p>見やすく伝わるスライド設計</p>
+                        </a>
+                        <a href="#powerpoint-tips" class="toc-item">
+                            <i class="fas fa-magic"></i>
+                            <h4>6. 実践テクニック集</h4>
+                            <p>効率化ショートカット・Tips</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Excel基礎と実践 -->
+        <section id="excel-basics" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-file-excel"></i> 1. Excel基礎と実践</h2>
+
+                <div class="excel-intro">
+                    <h3>Excelとは</h3>
+                    <p>Microsoft Excelは、表計算ソフトウェアの代表格です。データ入力、計算、分析、グラフ作成など、ビジネスデータを扱う上で欠かせないツールです。</p>
+                </div>
+
+                <!-- Excelの基本構造 -->
+                <div class="excel-structure">
+                    <h3>Excelの基本構造</h3>
+                    
+                    <div class="structure-grid">
+                        <div class="structure-item">
+                            <div class="structure-icon" style="background: linear-gradient(135deg, #217346, #185c37);"><i class="fas fa-th"></i></div>
+                            <h4>セル（Cell）</h4>
+                            <p>データを入力する最小単位。列（A, B, C...）と行（1, 2, 3...）の交点で識別（例：A1セル）</p>
+                        </div>
+
+                        <div class="structure-item">
+                            <div class="structure-icon" style="background: linear-gradient(135deg, #3498db, #2980b9);"><i class="fas fa-table"></i></div>
+                            <h4>ワークシート（Sheet）</h4>
+                            <p>セルが集まった表のこと。1つのファイル（ブック）に複数のシートを作成可能</p>
+                        </div>
+
+                        <div class="structure-item">
+                            <div class="structure-icon" style="background: linear-gradient(135deg, #e67e22, #d35400);"><i class="fas fa-book"></i></div>
+                            <h4>ブック（Workbook）</h4>
+                            <p>Excelファイル全体のこと。拡張子は「.xlsx」</p>
+                        </div>
+
+                        <div class="structure-item">
+                            <div class="structure-icon" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);"><i class="fas fa-calculator"></i></div>
+                            <h4>数式（Formula）</h4>
+                            <p>「=」から始まる計算式。自動計算により効率的なデータ処理が可能</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 基本操作 -->
+                <div class="basic-operations">
+                    <h3>基本操作</h3>
+                    
+                    <div class="operations-list">
+                        <div class="operation-item">
+                            <div class="operation-number">1</div>
+                            <div class="operation-content">
+                                <h4>データ入力</h4>
+                                <ul>
+                                    <li>セルをクリックして選択し、キーボードから入力</li>
+                                    <li>Enterキーで確定→下のセルに移動</li>
+                                    <li>Tabキーで確定→右のセルに移動</li>
+                                    <li>数値、文字列、日付などを自由に入力可能</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="operation-item">
+                            <div class="operation-number">2</div>
+                            <div class="operation-content">
+                                <h4>数式の入力</h4>
+                                <ul>
+                                    <li>「=」から始める（例：=A1+B1）</li>
+                                    <li>セルをクリックして参照を簡単に入力</li>
+                                    <li>Enterキーで計算結果が表示される</li>
+                                </ul>
+                                <div class="example-box">
+                                    <strong>例:</strong> A1セルに「100」、B1セルに「200」が入力されている場合<br>
+                                    C1セルに「=A1+B1」と入力すると → 結果「300」が表示される
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="operation-item">
+                            <div class="operation-number">3</div>
+                            <div class="operation-content">
+                                <h4>セルのコピー・貼り付け</h4>
+                                <ul>
+                                    <li><strong>コピー</strong>: Ctrl + C</li>
+                                    <li><strong>切り取り</strong>: Ctrl + X</li>
+                                    <li><strong>貼り付け</strong>: Ctrl + V</li>
+                                    <li><strong>形式を選択して貼り付け</strong>: Ctrl + Alt + V（数式のみ、値のみなど選択可能）</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="operation-item">
+                            <div class="operation-number">4</div>
+                            <div class="operation-content">
+                                <h4>オートフィル（連続データの入力）</h4>
+                                <ul>
+                                    <li>セルの右下の「■」（フィルハンドル）をドラッグ</li>
+                                    <li>数値の連番、曜日、月など自動入力</li>
+                                    <li>数式を下方向にコピーする際にも便利</li>
+                                </ul>
+                                <div class="example-box">
+                                    <strong>例:</strong> A1に「1」、A2に「2」と入力し、A1:A2を選択してフィルハンドルをドラッグ<br>
+                                    → 3, 4, 5... と連番が自動入力される
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="operation-item">
+                            <div class="operation-number">5</div>
+                            <div class="operation-content">
+                                <h4>行・列の挿入と削除</h4>
+                                <ul>
+                                    <li><strong>挿入</strong>: 行番号または列番号を右クリック→「挿入」</li>
+                                    <li><strong>削除</strong>: 行番号または列番号を右クリック→「削除」</li>
+                                    <li>複数行・列を選択して一括操作も可能</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- セル参照 -->
+                <div class="cell-reference">
+                    <h3>セル参照の種類</h3>
+                    <p>数式をコピーした際の挙動が変わる重要な概念です。</p>
+
+                    <table class="reference-table">
+                        <thead>
+                            <tr>
+                                <th>参照の種類</th>
+                                <th>記法</th>
+                                <th>説明</th>
+                                <th>使用例</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>相対参照</strong></td>
+                                <td>A1</td>
+                                <td>数式をコピーすると、参照先が相対的に移動する（最も一般的）</td>
+                                <td>=A1+B1 をコピー → =A2+B2, =A3+B3...</td>
+                            </tr>
+                            <tr>
+                                <td><strong>絶対参照</strong></td>
+                                <td>$A$1</td>
+                                <td>数式をコピーしても、参照先が固定される</td>
+                                <td>=$A$1*B1 をコピー → =$A$1*B2（A1は固定）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>複合参照</strong></td>
+                                <td>$A1 または A$1</td>
+                                <td>列のみ固定（$A1）、または行のみ固定（A$1）</td>
+                                <td>=$A1+B1 をコピー → =$A2+C1（列Aは固定、行は移動）</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="tips-box">
+                        <h4><i class="fas fa-lightbulb"></i> Tips</h4>
+                        <p>セル参照に「$」記号を付けるには、数式バーでセル参照部分にカーソルを置き、<strong>F4キー</strong>を押すと、相対参照→絶対参照→複合参照と順に切り替わります。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Excel必須関数 -->
+        <section id="excel-functions" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-function"></i> 2. Excel必須関数</h2>
+
+                <div class="functions-intro">
+                    <h3>関数とは</h3>
+                    <p>Excelの関数は、複雑な計算や処理を簡単に実行できる機能です。ビジネスでよく使う関数を習得することで、作業効率が大幅に向上します。</p>
+                </div>
+
+                <!-- 基本の集計関数 -->
+                <div class="function-category">
+                    <h3>基本の集計関数</h3>
+
+                    <div class="function-grid">
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                                <h4>SUM（合計）</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 指定した範囲の数値を合計する</p>
+                                <p><strong>書式:</strong> <code>=SUM(範囲)</code></p>
+                                <div class="function-example">
+                                    <strong>例:</strong><br>
+                                    <code>=SUM(A1:A10)</code><br>
+                                    → A1からA10までの合計を計算
+                                </div>
+                                <div class="function-tips">
+                                    <i class="fas fa-star"></i> ショートカット: Alt + Shift + =
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                                <h4>AVERAGE（平均）</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 指定した範囲の平均値を計算</p>
+                                <p><strong>書式:</strong> <code>=AVERAGE(範囲)</code></p>
+                                <div class="function-example">
+                                    <strong>例:</strong><br>
+                                    <code>=AVERAGE(B1:B20)</code><br>
+                                    → B1からB20までの平均を計算
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                                <h4>COUNT（数値の個数）</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 数値が入力されているセルの個数をカウント</p>
+                                <p><strong>書式:</strong> <code>=COUNT(範囲)</code></p>
+                                <div class="function-example">
+                                    <strong>例:</strong><br>
+                                    <code>=COUNT(C1:C50)</code><br>
+                                    → C1からC50で数値が入っているセルの個数
+                                </div>
+                                <div class="function-tips">
+                                    <i class="fas fa-info-circle"></i> COUNTA: 空白以外のセルをカウント
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                                <h4>MAX / MIN（最大・最小）</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 最大値・最小値を取得</p>
+                                <p><strong>書式:</strong> <code>=MAX(範囲)</code> / <code>=MIN(範囲)</code></p>
+                                <div class="function-example">
+                                    <strong>例:</strong><br>
+                                    <code>=MAX(D1:D100)</code> → 最大値<br>
+                                    <code>=MIN(D1:D100)</code> → 最小値
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 論理関数 -->
+                <div class="function-category">
+                    <h3>論理関数</h3>
+
+                    <div class="function-detailed">
+                        <div class="function-detail-card">
+                            <h4><i class="fas fa-code-branch"></i> IF関数（条件分岐）</h4>
+                            <p><strong>用途:</strong> 条件によって処理を分ける</p>
+                            <p><strong>書式:</strong> <code>=IF(条件, 真の場合の値, 偽の場合の値)</code></p>
+                            
+                            <div class="function-examples">
+                                <div class="example-item">
+                                    <strong>例1: 基本的な使い方</strong>
+                                    <div class="code-block">
+<pre>=IF(A1>=80, "合格", "不合格")</pre>
+                                    </div>
+                                    <p>→ A1が80以上なら「合格」、それ以外なら「不合格」</p>
+                                </div>
+
+                                <div class="example-item">
+                                    <strong>例2: 複数条件（IF関数のネスト）</strong>
+                                    <div class="code-block">
+<pre>=IF(A1>=90, "優", IF(A1>=80, "良", IF(A1>=70, "可", "不可")))</pre>
+                                    </div>
+                                    <p>→ 90以上:優、80以上:良、70以上:可、それ以外:不可</p>
+                                </div>
+
+                                <div class="example-item">
+                                    <strong>例3: 空白セルの判定</strong>
+                                    <div class="code-block">
+<pre>=IF(A1="", "未入力", A1)</pre>
+                                    </div>
+                                    <p>→ A1が空白なら「未入力」、それ以外はA1の値</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-detail-card">
+                            <h4><i class="fas fa-link"></i> AND / OR関数（複数条件）</h4>
+                            <p><strong>用途:</strong> 複数の条件を組み合わせる</p>
+                            
+                            <div class="function-examples">
+                                <div class="example-item">
+                                    <strong>AND関数（すべての条件が真）</strong>
+                                    <div class="code-block">
+<pre>=IF(AND(A1>=70, B1>=70), "合格", "不合格")</pre>
+                                    </div>
+                                    <p>→ A1とB1の両方が70以上なら「合格」</p>
+                                </div>
+
+                                <div class="example-item">
+                                    <strong>OR関数（いずれかの条件が真）</strong>
+                                    <div class="code-block">
+<pre>=IF(OR(A1="完了", A1="済"), "OK", "未完了")</pre>
+                                    </div>
+                                    <p>→ A1が「完了」または「済」なら「OK」</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 検索・参照関数 -->
+                <div class="function-category">
+                    <h3>検索・参照関数</h3>
+
+                    <div class="function-detailed">
+                        <div class="function-detail-card highlight-card">
+                            <h4><i class="fas fa-search"></i> VLOOKUP関数（縦方向検索）</h4>
+                            <p><strong>用途:</strong> 別の表から該当するデータを探して取得する（ビジネスで超頻出！）</p>
+                            <p><strong>書式:</strong> <code>=VLOOKUP(検索値, 範囲, 列番号, 検索方法)</code></p>
+                            
+                            <div class="vlookup-explanation">
+                                <h5>引数の説明</h5>
+                                <ul>
+                                    <li><strong>検索値:</strong> 探したい値（例：社員番号、商品コード）</li>
+                                    <li><strong>範囲:</strong> データが入っている表全体（1列目に検索値がある必要あり）</li>
+                                    <li><strong>列番号:</strong> 取得したい列が範囲の何列目かを指定（1から始まる）</li>
+                                    <li><strong>検索方法:</strong> FALSE（完全一致）またはTRUE（近似値）※通常はFALSE</li>
+                                </ul>
+
+                                <h5>実践例</h5>
+                                <div class="vlookup-example">
+                                    <p><strong>シナリオ:</strong> 社員番号から社員名を取得したい</p>
+                                    
+                                    <table class="example-table">
+                                        <caption>【社員マスタ（A1:C5）】</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>A列: 社員番号</th>
+                                                <th>B列: 社員名</th>
+                                                <th>C列: 部署</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td>1001</td><td>山田太郎</td><td>営業部</td></tr>
+                                            <tr><td>1002</td><td>佐藤花子</td><td>企画部</td></tr>
+                                            <tr><td>1003</td><td>鈴木一郎</td><td>総務部</td></tr>
+                                            <tr><td>1004</td><td>田中美咲</td><td>営業部</td></tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="code-block">
+<pre>=VLOOKUP(1002, A2:C5, 2, FALSE)</pre>
+                                    </div>
+                                    <p>→ 結果: 「佐藤花子」</p>
+                                    <p class="explanation-text">
+                                        説明: 社員番号「1002」をA2:C5の範囲の1列目（A列）から探し、2列目（B列）の値を取得
+                                    </p>
+                                </div>
+
+                                <div class="vlookup-tips">
+                                    <h5><i class="fas fa-exclamation-triangle"></i> VLOOKUP使用時の注意点</h5>
+                                    <ul>
+                                        <li>検索値は範囲の<strong>1列目</strong>になければならない</li>
+                                        <li>検索方法は<strong>FALSE</strong>（完全一致）を推奨（TRUEは昇順ソート必須）</li>
+                                        <li>範囲は<strong>絶対参照（$A$2:$C$5）</strong>にすると数式コピーが楽</li>
+                                        <li>検索値が見つからない場合は<strong>#N/A</strong>エラーが表示される</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-detail-card">
+                            <h4><i class="fas fa-search-plus"></i> XLOOKUP関数（最新の検索関数）</h4>
+                            <p><strong>用途:</strong> VLOOKUPの進化版。より柔軟な検索が可能（Microsoft 365、Excel 2021以降）</p>
+                            <p><strong>書式:</strong> <code>=XLOOKUP(検索値, 検索範囲, 戻り範囲)</code></p>
+                            
+                            <div class="function-example">
+                                <strong>VLOOKUPとの違い</strong>
+                                <ul>
+                                    <li>列番号の指定が不要（戻り範囲を直接指定）</li>
+                                    <li>検索値が左端になくてもOK</li>
+                                    <li>右から左への検索も可能</li>
+                                    <li>検索値が見つからない場合の代替値を指定可能</li>
+                                </ul>
+
+                                <div class="code-block">
+<pre>=XLOOKUP(1002, A2:A5, B2:B5, "見つかりません")</pre>
+                                </div>
+                                <p>→ 社員番号1002をA2:A5から探し、対応するB2:B5の値を取得。見つからなければ「見つかりません」を表示</p>
+                            </div>
+                        </div>
+
+                        <div class="function-detail-card">
+                            <h4><i class="fas fa-arrows-alt-h"></i> INDEX + MATCH関数（高度な検索）</h4>
+                            <p><strong>用途:</strong> VLOOKUPより柔軟な検索（左方向検索、複数条件検索が可能）</p>
+                            
+                            <div class="function-example">
+                                <strong>書式の組み合わせ:</strong>
+                                <div class="code-block">
+<pre>=INDEX(取得したい列, MATCH(検索値, 検索列, 0))</pre>
+                                </div>
+
+                                <strong>実例:</strong>
+                                <div class="code-block">
+<pre>=INDEX(B2:B5, MATCH(1002, A2:A5, 0))</pre>
+                                </div>
+                                <p>→ A2:A5から「1002」を探し、その位置に対応するB2:B5の値を取得</p>
+
+                                <div class="function-tips">
+                                    <i class="fas fa-star"></i> <strong>VLOOKUPより優れている点:</strong>
+                                    <ul>
+                                        <li>検索列が右端でも左端でもOK</li>
+                                        <li>列を追加・削除しても数式が壊れにくい</li>
+                                        <li>より高速に動作する（大量データの場合）</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 文字列操作関数 -->
+                <div class="function-category">
+                    <h3>文字列操作関数</h3>
+
+                    <div class="function-grid">
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+                                <h4>CONCATENATE / &amp;</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 複数のセルの文字列を結合</p>
+                                <div class="function-example">
+                                    <code>=A1&" "&B1</code><br>
+                                    または<br>
+                                    <code>=CONCATENATE(A1, " ", B1)</code><br>
+                                    → A1「山田」、B1「太郎」なら「山田 太郎」
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #16a085, #1abc9c);">
+                                <h4>LEFT / RIGHT / MID</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 文字列の一部を取り出す</p>
+                                <div class="function-example">
+                                    <code>=LEFT(A1, 3)</code> → 左から3文字<br>
+                                    <code>=RIGHT(A1, 2)</code> → 右から2文字<br>
+                                    <code>=MID(A1, 2, 3)</code> → 2文字目から3文字
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #8e44ad, #9b59b6);">
+                                <h4>LEN（文字数）</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 文字列の文字数を取得</p>
+                                <div class="function-example">
+                                    <code>=LEN(A1)</code><br>
+                                    → A1「こんにちは」なら結果「5」
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #c0392b, #e74c3c);">
+                                <h4>TRIM（空白削除）</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 余分な空白を削除</p>
+                                <div class="function-example">
+                                    <code>=TRIM(A1)</code><br>
+                                    → 「  山田  太郎  」→「山田 太郎」
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 日付関数 -->
+                <div class="function-category">
+                    <h3>日付・時刻関数</h3>
+
+                    <div class="function-grid">
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #2980b9, #3498db);">
+                                <h4>TODAY / NOW</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 今日の日付・現在時刻を自動取得</p>
+                                <div class="function-example">
+                                    <code>=TODAY()</code> → 今日の日付<br>
+                                    <code>=NOW()</code> → 現在の日時
+                                </div>
+                                <div class="function-tips">
+                                    <i class="fas fa-info-circle"></i> ファイルを開くたびに自動更新される
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #27ae60, #2ecc71);">
+                                <h4>DATE / YEAR / MONTH / DAY</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 日付の作成・分解</p>
+                                <div class="function-example">
+                                    <code>=DATE(2025, 3, 20)</code> → 2025/3/20<br>
+                                    <code>=YEAR(A1)</code> → 年を取得<br>
+                                    <code>=MONTH(A1)</code> → 月を取得<br>
+                                    <code>=DAY(A1)</code> → 日を取得
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #d35400, #e67e22);">
+                                <h4>DATEDIF（日数計算）</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 2つの日付間の日数・月数・年数を計算</p>
+                                <div class="function-example">
+                                    <code>=DATEDIF(A1, B1, "D")</code> → 日数<br>
+                                    <code>=DATEDIF(A1, B1, "M")</code> → 月数<br>
+                                    <code>=DATEDIF(A1, B1, "Y")</code> → 年数
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="function-card">
+                            <div class="function-header" style="background: linear-gradient(135deg, #8e44ad, #9b59b6);">
+                                <h4>WEEKDAY（曜日）</h4>
+                            </div>
+                            <div class="function-body">
+                                <p><strong>用途:</strong> 日付から曜日を取得（1=日曜、7=土曜）</p>
+                                <div class="function-example">
+                                    <code>=WEEKDAY(A1)</code><br>
+                                    土日判定:<br>
+                                    <code>=IF(OR(WEEKDAY(A1)=1, WEEKDAY(A1)=7), "休日", "平日")</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. グラフ・ピボットテーブル -->
+        <section id="excel-charts" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-chart-bar"></i> 3. グラフ・ピボットテーブル</h2>
+
+                <!-- グラフ作成 -->
+                <div class="chart-section">
+                    <h3>Excelグラフの作成</h3>
+                    <p>データを視覚化することで、傾向やパターンを一目で把握できます。</p>
+
+                    <div class="chart-types">
+                        <h4>主要なグラフの種類と用途</h4>
+
+                        <div class="chart-grid">
+                            <div class="chart-type-card">
+                                <div class="chart-icon" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h5>縦棒グラフ</h5>
+                                <p><strong>用途:</strong> 項目間の比較</p>
+                                <p><strong>例:</strong> 部門別売上、商品別販売数</p>
+                            </div>
+
+                            <div class="chart-type-card">
+                                <div class="chart-icon" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h5>折れ線グラフ</h5>
+                                <p><strong>用途:</strong> 時系列の推移</p>
+                                <p><strong>例:</strong> 月別売上推移、株価の変動</p>
+                            </div>
+
+                            <div class="chart-type-card">
+                                <div class="chart-icon" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <h5>円グラフ</h5>
+                                <p><strong>用途:</strong> 構成比率の表示</p>
+                                <p><strong>例:</strong> 市場シェア、予算配分</p>
+                            </div>
+
+                            <div class="chart-type-card">
+                                <div class="chart-icon" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                                    <i class="fas fa-chart-area"></i>
+                                </div>
+                                <h5>面グラフ</h5>
+                                <p><strong>用途:</strong> 累積推移の可視化</p>
+                                <p><strong>例:</strong> 積み上げ売上推移</p>
+                            </div>
+
+                            <div class="chart-type-card">
+                                <div class="chart-icon" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                                    <i class="fas fa-braille"></i>
+                                </div>
+                                <h5>散布図</h5>
+                                <p><strong>用途:</strong> 2変数の相関関係</p>
+                                <p><strong>例:</strong> 広告費と売上の関係</p>
+                            </div>
+
+                            <div class="chart-type-card">
+                                <div class="chart-icon" style="background: linear-gradient(135deg, #16a085, #1abc9c);">
+                                    <i class="fas fa-th"></i>
+                                </div>
+                                <h5>ヒートマップ</h5>
+                                <p><strong>用途:</strong> 数値の大小を色で表現</p>
+                                <p><strong>例:</strong> 時間帯別アクセス数</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-creation-steps">
+                        <h4>グラフ作成の基本手順</h4>
+
+                        <div class="steps-flow">
+                            <div class="step-item">
+                                <div class="step-num">STEP 1</div>
+                                <div class="step-content">
+                                    <h5>データ範囲を選択</h5>
+                                    <p>グラフにしたいデータ（項目名とデータ）を選択</p>
+                                </div>
+                            </div>
+
+                            <div class="step-arrow"><i class="fas fa-arrow-down"></i></div>
+
+                            <div class="step-item">
+                                <div class="step-num">STEP 2</div>
+                                <div class="step-content">
+                                    <h5>グラフを挿入</h5>
+                                    <p>「挿入」タブ → 「グラフ」グループから適切なグラフを選択</p>
+                                </div>
+                            </div>
+
+                            <div class="step-arrow"><i class="fas fa-arrow-down"></i></div>
+
+                            <div class="step-item">
+                                <div class="step-num">STEP 3</div>
+                                <div class="step-content">
+                                    <h5>グラフをカスタマイズ</h5>
+                                    <p>タイトル、軸ラベル、色、凡例などを編集</p>
+                                </div>
+                            </div>
+
+                            <div class="step-arrow"><i class="fas fa-arrow-down"></i></div>
+
+                            <div class="step-item">
+                                <div class="step-num">STEP 4</div>
+                                <div class="step-content">
+                                    <h5>完成</h5>
+                                    <p>グラフをコピーして他の資料（PowerPointなど）に貼り付け可能</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart-tips">
+                        <h4><i class="fas fa-lightbulb"></i> グラフ作成のポイント</h4>
+                        <ul>
+                            <li>グラフタイトルは具体的に（「売上」→「2024年度 部門別月次売上推移」）</li>
+                            <li>軸ラベルを必ず表示（単位も記載: 「売上（百万円）」）</li>
+                            <li>色は3～5色程度に抑える（多すぎると見づらい）</li>
+                            <li>凡例の位置を工夫（グラフの邪魔にならない場所に配置）</li>
+                            <li>データラベルは必要に応じて表示（全項目に付けると煩雑）</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ピボットテーブル -->
+                <div class="pivot-section">
+                    <h3>ピボットテーブル（データ集計の最強ツール）</h3>
+                    <p>ピボットテーブルは、大量のデータを瞬時に集計・分析できる強力な機能です。ドラッグ&ドロップだけで、様々な角度からデータを見ることができます。</p>
+
+                    <div class="pivot-benefits">
+                        <h4>ピボットテーブルでできること</h4>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <i class="fas fa-calculator"></i>
+                                <h5>集計</h5>
+                                <p>合計、平均、個数などを自動計算</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-layer-group"></i>
+                                <h5>グループ化</h5>
+                                <p>月別、部門別など自由にグループ化</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-filter"></i>
+                                <h5>フィルタリング</h5>
+                                <p>必要なデータだけを表示</p>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fas fa-sort"></i>
+                                <h5>並べ替え</h5>
+                                <p>昇順・降順で簡単にソート</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pivot-creation">
+                        <h4>ピボットテーブルの作成手順</h4>
+
+                        <div class="creation-steps">
+                            <div class="creation-step">
+                                <div class="creation-num">1</div>
+                                <div class="creation-content">
+                                    <h5>データ範囲内のセルを選択</h5>
+                                    <p>見出し行を含むデータ範囲のいずれかのセルをクリック</p>
+                                </div>
+                            </div>
+
+                            <div class="creation-step">
+                                <div class="creation-num">2</div>
+                                <div class="creation-content">
+                                    <h5>ピボットテーブルを挿入</h5>
+                                    <p>「挿入」タブ → 「ピボットテーブル」をクリック</p>
+                                </div>
+                            </div>
+
+                            <div class="creation-step">
+                                <div class="creation-num">3</div>
+                                <div class="creation-content">
+                                    <h5>配置場所を選択</h5>
+                                    <p>「新規ワークシート」または「既存のワークシート」を選択</p>
+                                </div>
+                            </div>
+
+                            <div class="creation-step">
+                                <div class="creation-num">4</div>
+                                <div class="creation-content">
+                                    <h5>フィールドを配置</h5>
+                                    <p>右側のフィールドリストから、以下のエリアにドラッグ：</p>
+                                    <ul>
+                                        <li><strong>行:</strong> 縦方向に表示する項目</li>
+                                        <li><strong>列:</strong> 横方向に表示する項目</li>
+                                        <li><strong>値:</strong> 集計する数値</li>
+                                        <li><strong>フィルター:</strong> データの絞り込み条件</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pivot-example">
+                        <h4>実践例：売上データの分析</h4>
+                        
+                        <div class="example-scenario">
+                            <p><strong>元データ（売上明細）:</strong></p>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>日付</th>
+                                        <th>商品</th>
+                                        <th>担当者</th>
+                                        <th>売上金額</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2025/1/5</td><td>商品A</td><td>山田</td><td>50,000</td></tr>
+                                    <tr><td>2025/1/8</td><td>商品B</td><td>佐藤</td><td>30,000</td></tr>
+                                    <tr><td>2025/2/3</td><td>商品A</td><td>山田</td><td>45,000</td></tr>
+                                    <tr><td colspan="4" style="text-align:center;">... （1000件のデータ）</td></tr>
+                                </tbody>
+                            </table>
+
+                            <p style="margin-top: 20px;"><strong>ピボットテーブルでの集計結果例:</strong></p>
+                            <ul>
+                                <li><strong>行:</strong> 商品、<strong>列:</strong> 月、<strong>値:</strong> 売上金額の合計<br>
+                                → 商品別・月別の売上一覧表が瞬時に作成される</li>
+                                <li><strong>行:</strong> 担当者、<strong>値:</strong> 売上金額の合計<br>
+                                → 担当者別の売上ランキングが作成される</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pivot-tips">
+                        <h4><i class="fas fa-lightbulb"></i> ピボットテーブル活用Tips</h4>
+                        <ul>
+                            <li>データ更新後は「データ」タブ → 「更新」をクリックして最新化</li>
+                            <li>「値フィールドの設定」で集計方法を変更可能（合計、平均、個数など）</li>
+                            <li>日付は自動的に月、四半期、年にグループ化できる</li>
+                            <li>計算フィールドで独自の計算式を追加可能（例：利益率 = 利益 ÷ 売上）</li>
+                            <li>ピボットグラフと組み合わせると、より視覚的な分析が可能</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PowerPoint基礎 -->
+        <section id="powerpoint-basics" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-file-powerpoint"></i> 4. PowerPoint基礎</h2>
+
+                <div class="ppt-intro">
+                    <h3>PowerPointとは</h3>
+                    <p>Microsoft PowerPointは、プレゼンテーション資料作成の定番ソフトウェアです。スライドを作成し、ビジュアルを活用して情報を効果的に伝えることができます。</p>
+                </div>
+
+                <!-- PowerPointの基本構造 -->
+                <div class="ppt-structure">
+                    <h3>PowerPointの基本構造</h3>
+
+                    <div class="structure-elements">
+                        <div class="element-card">
+                            <div class="element-icon" style="background: linear-gradient(135deg, #d35400, #e67e22);">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h4>スライド（Slide）</h4>
+                            <p>プレゼンテーションの1ページ。テキスト、画像、グラフなどを配置</p>
+                        </div>
+
+                        <div class="element-card">
+                            <div class="element-icon" style="background: linear-gradient(135deg, #c0392b, #e74c3c);">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h4>レイアウト（Layout）</h4>
+                            <p>スライドの構成テンプレート。タイトルスライド、コンテンツスライドなど</p>
+                        </div>
+
+                        <div class="element-card">
+                            <div class="element-icon" style="background: linear-gradient(135deg, #8e44ad, #9b59b6);">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4>テーマ（Theme）</h4>
+                            <p>色、フォント、背景のデザインセット。全スライドに統一感を与える</p>
+                        </div>
+
+                        <div class="element-card">
+                            <div class="element-icon" style="background: linear-gradient(135deg, #16a085, #1abc9c);">
+                                <i class="fas fa-ruler-combined"></i>
+                            </div>
+                            <h4>スライドマスター（Master）</h4>
+                            <p>全スライドに共通する要素（ロゴ、フッターなど）を一括管理</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- スライド作成の基本原則 -->
+                <div class="ppt-principles">
+                    <h3>スライド作成の基本原則</h3>
+
+                    <div class="principles-list">
+                        <div class="principle-item">
+                            <div class="principle-icon" style="background: #3498db;">
+                                <i class="fas fa-compress-alt"></i>
+                            </div>
+                            <div class="principle-content">
+                                <h4>1. シンプルに（Keep It Simple）</h4>
+                                <p>1スライド1メッセージが基本。情報を詰め込みすぎない。</p>
+                                <div class="principle-example">
+                                    <strong>❌ 悪い例:</strong> 小さな文字で長文がびっしり、複数のグラフが並ぶ<br>
+                                    <strong>✅ 良い例:</strong> キーワードのみ大きく表示、1つのグラフを強調
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="principle-item">
+                            <div class="principle-icon" style="background: #27ae60;">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="principle-content">
+                                <h4>2. 視覚的に（Visual First）</h4>
+                                <p>文字だけでなく、画像、アイコン、グラフを活用する。</p>
+                                <div class="principle-example">
+                                    <strong>効果:</strong> 視覚情報は文字情報の6万倍速く処理される（3M Corporation調査）
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="principle-item">
+                            <div class="principle-icon" style="background: #e67e22;">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="principle-content">
+                                <h4>3. 一貫性（Consistency）</h4>
+                                <p>フォント、色、レイアウトを統一する。</p>
+                                <div class="principle-example">
+                                    <strong>推奨:</strong> フォントは2種類まで、色は3～4色まで
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="principle-item">
+                            <div class="principle-icon" style="background: #9b59b6;">
+                                <i class="fas fa-stream"></i>
+                            </div>
+                            <div class="principle-content">
+                                <h4>4. ストーリー性（Story Flow）</h4>
+                                <p>起承転結を意識した構成。聞き手を飽きさせない流れを作る。</p>
+                                <div class="principle-example">
+                                    <strong>基本構成:</strong> 導入 → 現状・課題 → 解決策 → 効果・まとめ
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="principle-item">
+                            <div class="principle-icon" style="background: #e74c3c;">
+                                <i class="fas fa-font"></i>
+                            </div>
+                            <div class="principle-content">
+                                <h4>5. 読みやすさ（Readability）</h4>
+                                <p>フォントサイズは最小18pt以上（推奨24pt以上）。</p>
+                                <div class="principle-example">
+                                    <strong>カラーコントラスト:</strong> 背景と文字の色のコントラストを強く（白背景なら濃い色の文字）
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- スライドの基本レイアウト -->
+                <div class="ppt-layouts">
+                    <h3>基本的なスライドレイアウト</h3>
+
+                    <div class="layout-types">
+                        <div class="layout-card">
+                            <h4>1. タイトルスライド</h4>
+                            <div class="layout-preview" style="background: linear-gradient(135deg, #3498db, #2980b9); color: white; padding: 40px; text-align: center;">
+                                <div style="font-size: 1.8em; font-weight: bold; margin-bottom: 20px;">プレゼンテーションのタイトル</div>
+                                <div style="font-size: 1.2em;">副題・日付・発表者名</div>
+                            </div>
+                            <p><strong>用途:</strong> プレゼンの冒頭、セクション区切り</p>
+                        </div>
+
+                        <div class="layout-card">
+                            <h4>2. タイトル+コンテンツ</h4>
+                            <div class="layout-preview" style="background: white; border: 2px solid #ddd; padding: 20px;">
+                                <div style="font-weight: bold; font-size: 1.4em; margin-bottom: 15px; color: #2c3e50;">スライドタイトル</div>
+                                <div style="color: #34495e;">
+                                    • ポイント1<br>
+                                    • ポイント2<br>
+                                    • ポイント3
+                                </div>
+                            </div>
+                            <p><strong>用途:</strong> 最も一般的なレイアウト</p>
+                        </div>
+
+                        <div class="layout-card">
+                            <h4>3. 2カラム（左右分割）</h4>
+                            <div class="layout-preview" style="background: white; border: 2px solid #ddd; padding: 20px;">
+                                <div style="font-weight: bold; font-size: 1.4em; margin-bottom: 15px; color: #2c3e50;">比較・対比</div>
+                                <div style="display: flex; gap: 20px;">
+                                    <div style="flex: 1; background: #ecf0f1; padding: 10px; color: #2c3e50;">左側の内容</div>
+                                    <div style="flex: 1; background: #ecf0f1; padding: 10px; color: #2c3e50;">右側の内容</div>
+                                </div>
+                            </div>
+                            <p><strong>用途:</strong> Before/After、メリット/デメリットの比較</p>
+                        </div>
+
+                        <div class="layout-card">
+                            <h4>4. 画像+説明</h4>
+                            <div class="layout-preview" style="background: white; border: 2px solid #ddd; padding: 20px;">
+                                <div style="font-weight: bold; font-size: 1.4em; margin-bottom: 15px; color: #2c3e50;">ビジュアル重視</div>
+                                <div style="display: flex; gap: 15px; align-items: center;">
+                                    <div style="flex: 1; background: #bdc3c7; height: 100px; display: flex; align-items: center; justify-content: center; color: white;">画像</div>
+                                    <div style="flex: 1; color: #34495e;">説明テキスト</div>
+                                </div>
+                            </div>
+                            <p><strong>用途:</strong> 製品紹介、事例紹介</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 資料デザインの基本 -->
+        <section id="powerpoint-design" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-palette"></i> 5. 資料デザインの基本</h2>
+
+                <!-- 配色の原則 -->
+                <div class="design-color">
+                    <h3>配色の原則</h3>
+
+                    <div class="color-rules">
+                        <div class="color-rule">
+                            <h4>60-30-10の法則</h4>
+                            <p>プレゼンデザインの黄金比率</p>
+                            <div class="color-distribution">
+                                <div class="color-block" style="background: #ecf0f1; flex: 6;">
+                                    <div class="color-label">ベースカラー 60%</div>
+                                    <p>背景色、主要な色</p>
+                                </div>
+                                <div class="color-block" style="background: #3498db; color: white; flex: 3;">
+                                    <div class="color-label">メインカラー 30%</div>
+                                    <p>見出し、重要部分</p>
+                                </div>
+                                <div class="color-block" style="background: #e74c3c; color: white; flex: 1;">
+                                    <div class="color-label">アクセントカラー 10%</div>
+                                    <p>強調、CTA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="color-combinations">
+                            <h4>おすすめ配色パターン</h4>
+                            
+                            <div class="color-pattern">
+                                <div class="pattern-colors">
+                                    <div class="pattern-color" style="background: #2c3e50;"></div>
+                                    <div class="pattern-color" style="background: #3498db;"></div>
+                                    <div class="pattern-color" style="background: #ecf0f1;"></div>
+                                </div>
+                                <p><strong>ビジネス:</strong> ネイビー + ブルー + ライトグレー（信頼感）</p>
+                            </div>
+
+                            <div class="color-pattern">
+                                <div class="pattern-colors">
+                                    <div class="pattern-color" style="background: #27ae60;"></div>
+                                    <div class="pattern-color" style="background: #2ecc71;"></div>
+                                    <div class="pattern-color" style="background: #e8f8f5;"></div>
+                                </div>
+                                <p><strong>エコ・環境:</strong> グリーン系（自然、成長）</p>
+                            </div>
+
+                            <div class="color-pattern">
+                                <div class="pattern-colors">
+                                    <div class="pattern-color" style="background: #e67e22;"></div>
+                                    <div class="pattern-color" style="background: #f39c12;"></div>
+                                    <div class="pattern-color" style="background: #fef5e7;"></div>
+                                </div>
+                                <p><strong>活力・情熱:</strong> オレンジ系（エネルギッシュ）</p>
+                            </div>
+
+                            <div class="color-pattern">
+                                <div class="pattern-colors">
+                                    <div class="pattern-color" style="background: #8e44ad;"></div>
+                                    <div class="pattern-color" style="background: #9b59b6;"></div>
+                                    <div class="pattern-color" style="background: #f4ecf7;"></div>
+                                </div>
+                                <p><strong>創造性・高級感:</strong> パープル系（洗練）</p>
+                            </div>
+                        </div>
+
+                        <div class="color-tips">
+                            <h4><i class="fas fa-lightbulb"></i> 配色のコツ</h4>
+                            <ul>
+                                <li>会社のコーポレートカラーを基本に</li>
+                                <li>3色以内に抑える（多すぎると散漫な印象）</li>
+                                <li>背景と文字のコントラストを十分に（白背景なら濃い色の文字）</li>
+                                <li>カラーパレットツール活用（Adobe Color、Coolorsなど）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- フォントの選び方 -->
+                <div class="design-font">
+                    <h3>フォントの選び方</h3>
+
+                    <div class="font-guidelines">
+                        <div class="font-rule">
+                            <h4>フォントの種類</h4>
+                            <table class="font-table">
+                                <thead>
+                                    <tr>
+                                        <th>種類</th>
+                                        <th>特徴</th>
+                                        <th>用途</th>
+                                        <th>例</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>ゴシック体</strong></td>
+                                        <td>太さが均一、読みやすい</td>
+                                        <td>見出し、本文</td>
+                                        <td>メイリオ、游ゴシック</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>明朝体</strong></td>
+                                        <td>格調高い、伝統的</td>
+                                        <td>フォーマルな資料</td>
+                                        <td>游明朝、MS明朝</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sans-serif</strong></td>
+                                        <td>シンプル、モダン</td>
+                                        <td>英数字</td>
+                                        <td>Arial, Calibri</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="font-sizes">
+                            <h4>推奨フォントサイズ</h4>
+                            <ul class="size-list">
+                                <li><span class="size-label" style="font-size: 2em;">タイトル:</span> 36～44pt（目立たせる）</li>
+                                <li><span class="size-label" style="font-size: 1.5em;">見出し:</span> 28～32pt（階層を明確に）</li>
+                                <li><span class="size-label" style="font-size: 1.2em;">本文:</span> 20～24pt（読みやすく）</li>
+                                <li><span class="size-label">注釈・出典:</span> 14～16pt（小さすぎ注意）</li>
+                            </ul>
+                        </div>
+
+                        <div class="font-tips">
+                            <h4><i class="fas fa-check-circle"></i> フォント選びのポイント</h4>
+                            <ul>
+                                <li>フォントは2種類まで（見出しと本文で使い分け）</li>
+                                <li>スライドタイトルは太字（Bold）で強調</li>
+                                <li>行間を適度に空ける（1.2～1.5倍が目安）</li>
+                                <li>文字の詰め込みすぎに注意（余白を大切に）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- レイアウトの原則 -->
+                <div class="design-layout">
+                    <h3>レイアウトの原則</h3>
+
+                    <div class="layout-principles">
+                        <div class="layout-principle-card">
+                            <div class="layout-principle-icon" style="background: #3498db;">
+                                <i class="fas fa-align-center"></i>
+                            </div>
+                            <h4>1. 整列（Alignment）</h4>
+                            <p>要素を揃えることで秩序と統一感が生まれる</p>
+                            <div class="layout-example">
+                                <strong>✅ 良い例:</strong> すべての要素が左揃え、または中央揃えで統一<br>
+                                <strong>❌ 悪い例:</strong> 要素がバラバラに配置されている
+                            </div>
+                        </div>
+
+                        <div class="layout-principle-card">
+                            <div class="layout-principle-icon" style="background: #27ae60;">
+                                <i class="fas fa-th-large"></i>
+                            </div>
+                            <h4>2. 近接（Proximity）</h4>
+                            <p>関連する要素を近づけ、関連しない要素は離す</p>
+                            <div class="layout-example">
+                                <strong>効果:</strong> 情報のグループ化が一目で分かる
+                            </div>
+                        </div>
+
+                        <div class="layout-principle-card">
+                            <div class="layout-principle-icon" style="background: #e67e22;">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                            </div>
+                            <h4>3. 余白（White Space）</h4>
+                            <p>適度な余白が洗練された印象を与える</p>
+                            <div class="layout-example">
+                                <strong>目安:</strong> スライドの30～40%は余白にする
+                            </div>
+                        </div>
+
+                        <div class="layout-principle-card">
+                            <div class="layout-principle-icon" style="background: #e74c3c;">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h4>4. コントラスト（Contrast）</h4>
+                            <p>重要な情報を目立たせる</p>
+                            <div class="layout-example">
+                                <strong>方法:</strong> サイズ、色、太さで差をつける
+                            </div>
+                        </div>
+
+                        <div class="layout-principle-card">
+                            <div class="layout-principle-icon" style="background: #9b59b6;">
+                                <i class="fas fa-repeat"></i>
+                            </div>
+                            <h4>5. 反復（Repetition）</h4>
+                            <p>同じデザイン要素を繰り返し使用</p>
+                            <div class="layout-example">
+                                <strong>効果:</strong> 全体の統一感、ブランディング
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 実践テクニック集 -->
+        <section id="powerpoint-tips" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-magic"></i> 6. 実践テクニック集</h2>
+
+                <!-- Excel/PowerPoint共通のショートカット -->
+                <div class="shortcuts-section">
+                    <h3>効率化ショートカットキー</h3>
+
+                    <!-- Excelショートカット -->
+                    <div class="shortcuts-category">
+                        <h4><i class="fas fa-file-excel"></i> Excel</h4>
+                        
+                        <table class="shortcuts-table">
+                            <thead>
+                                <tr>
+                                    <th>ショートカット</th>
+                                    <th>機能</th>
+                                    <th>説明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+                                    <td>コピー</td>
+                                    <td>選択したセルをコピー</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>V</kbd></td>
+                                    <td>貼り付け</td>
+                                    <td>コピーした内容を貼り付け</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>X</kbd></td>
+                                    <td>切り取り</td>
+                                    <td>選択したセルを切り取り</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td>
+                                    <td>元に戻す</td>
+                                    <td>直前の操作を取り消し</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td>
+                                    <td>やり直し</td>
+                                    <td>取り消した操作をやり直し</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>S</kbd></td>
+                                    <td>保存</td>
+                                    <td>ファイルを保存</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>F</kbd></td>
+                                    <td>検索</td>
+                                    <td>データを検索</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>H</kbd></td>
+                                    <td>置換</td>
+                                    <td>データを置換</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><kbd>F4</kbd></td>
+                                    <td>絶対参照切替</td>
+                                    <td>セル参照を相対→絶対→複合に切替</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><kbd>Ctrl</kbd> + <kbd>;</kbd></td>
+                                    <td>今日の日付</td>
+                                    <td>現在の日付を入力</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><kbd>Ctrl</kbd> + <kbd>:</kbd></td>
+                                    <td>現在時刻</td>
+                                    <td>現在の時刻を入力</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd></td>
+                                    <td>合計</td>
+                                    <td>SUM関数を自動挿入</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>Space</kbd></td>
+                                    <td>列選択</td>
+                                    <td>列全体を選択</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Shift</kbd> + <kbd>Space</kbd></td>
+                                    <td>行選択</td>
+                                    <td>行全体を選択</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>Home</kbd></td>
+                                    <td>先頭へ移動</td>
+                                    <td>A1セルへ移動</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>End</kbd></td>
+                                    <td>最後へ移動</td>
+                                    <td>データ範囲の最後へ移動</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- PowerPointショートカット -->
+                    <div class="shortcuts-category">
+                        <h4><i class="fas fa-file-powerpoint"></i> PowerPoint</h4>
+                        
+                        <table class="shortcuts-table">
+                            <thead>
+                                <tr>
+                                    <th>ショートカット</th>
+                                    <th>機能</th>
+                                    <th>説明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight-row">
+                                    <td><kbd>Ctrl</kbd> + <kbd>M</kbd></td>
+                                    <td>新しいスライド</td>
+                                    <td>新規スライドを挿入</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><kbd>Ctrl</kbd> + <kbd>D</kbd></td>
+                                    <td>複製</td>
+                                    <td>選択したスライドや図形を複製</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>F5</kbd></td>
+                                    <td>スライドショー開始</td>
+                                    <td>最初からスライドショー</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Shift</kbd> + <kbd>F5</kbd></td>
+                                    <td>現在のスライドから開始</td>
+                                    <td>選択中のスライドから再生</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>G</kbd></td>
+                                    <td>グループ化</td>
+                                    <td>複数の図形をグループ化</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd></td>
+                                    <td>グループ解除</td>
+                                    <td>グループを解除</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></td>
+                                    <td>書式コピー</td>
+                                    <td>書式をコピー</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></td>
+                                    <td>書式貼り付け</td>
+                                    <td>コピーした書式を貼り付け</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd></td>
+                                    <td>前面へ移動</td>
+                                    <td>図形を前面に移動</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>↓</kbd></td>
+                                    <td>背面へ移動</td>
+                                    <td>図形を背面に移動</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 実践Tips -->
+                <div class="practical-tips">
+                    <h3>業務効率化Tips</h3>
+
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon" style="background: #27ae60;">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <h4>Excel: 条件付き書式</h4>
+                            <p><strong>用途:</strong> 数値の大小を色で自動表示</p>
+                            <p><strong>方法:</strong> 「ホーム」タブ → 「条件付き書式」</p>
+                            <p><strong>例:</strong> 売上目標達成セルを緑色、未達成を赤色に自動着色</p>
+                        </div>
+
+                        <div class="tip-card">
+                            <div class="tip-icon" style="background: #3498db;">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <h4>Excel: データの入力規則</h4>
+                            <p><strong>用途:</strong> 入力ミスを防ぐ</p>
+                            <p><strong>方法:</strong> 「データ」タブ → 「データの入力規則」</p>
+                            <p><strong>例:</strong> セルにドロップダウンリストを設定し、選択式入力にする</p>
+                        </div>
+
+                        <div class="tip-card">
+                            <div class="tip-icon" style="background: #e67e22;">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <h4>Excel: テーブル機能</h4>
+                            <p><strong>用途:</strong> データ範囲を自動拡張</p>
+                            <p><strong>方法:</strong> データ範囲選択 → Ctrl+T</p>
+                            <p><strong>メリット:</strong> フィルター自動適用、数式の自動コピー</p>
+                        </div>
+
+                        <div class="tip-card">
+                            <div class="tip-icon" style="background: #9b59b6;">
+                                <i class="fas fa-file-powerpoint"></i>
+                            </div>
+                            <h4>PowerPoint: スライドマスター</h4>
+                            <p><strong>用途:</strong> 全スライドのデザイン一括変更</p>
+                            <p><strong>方法:</strong> 「表示」タブ → 「スライドマスター」</p>
+                            <p><strong>活用:</strong> ロゴ、フッター、背景を一括設定</p>
+                        </div>
+
+                        <div class="tip-card">
+                            <div class="tip-icon" style="background: #e74c3c;">
+                                <i class="fas fa-file-powerpoint"></i>
+                            </div>
+                            <h4>PowerPoint: 配置とガイド</h4>
+                            <p><strong>用途:</strong> 図形を綺麗に整列</p>
+                            <p><strong>方法:</strong> 図形選択 → 「配置」 → 「左揃え」等</p>
+                            <p><strong>Tips:</strong> Shiftキー+ドラッグで水平・垂直移動</p>
+                        </div>
+
+                        <div class="tip-card">
+                            <div class="tip-icon" style="background: #16a085;">
+                                <i class="fas fa-file-powerpoint"></i>
+                            </div>
+                            <h4>PowerPoint: SmartArt</h4>
+                            <p><strong>用途:</strong> プロセス図や組織図を簡単作成</p>
+                            <p><strong>方法:</strong> 「挿入」タブ → 「SmartArt」</p>
+                            <p><strong>種類:</strong> リスト、プロセス、循環、階層構造など</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- よくあるミスと対策 -->
+                <div class="common-mistakes">
+                    <h3>よくあるミスと対策</h3>
+
+                    <div class="mistakes-list">
+                        <div class="mistake-item">
+                            <div class="mistake-icon" style="background: #e74c3c;">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="mistake-content">
+                                <h4>Excel: 数式がコピーできない</h4>
+                                <p><strong>原因:</strong> セルが文字列形式になっている</p>
+                                <p><strong>対策:</strong> セルの表示形式を「標準」または「数値」に変更</p>
+                            </div>
+                        </div>
+
+                        <div class="mistake-item">
+                            <div class="mistake-icon" style="background: #e74c3c;">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="mistake-content">
+                                <h4>Excel: #N/Aエラー</h4>
+                                <p><strong>原因:</strong> VLOOKUPで検索値が見つからない</p>
+                                <p><strong>対策:</strong> IFERROR関数で囲む → =IFERROR(VLOOKUP(...), "該当なし")</p>
+                            </div>
+                        </div>
+
+                        <div class="mistake-item">
+                            <div class="mistake-icon" style="background: #e74c3c;">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="mistake-content">
+                                <h4>PowerPoint: フォントが変わってしまう</h4>
+                                <p><strong>原因:</strong> 他のPCで開いたときにフォントがない</p>
+                                <p><strong>対策:</strong> 「ファイル」→「オプション」→「フォントの埋め込み」をチェック</p>
+                            </div>
+                        </div>
+
+                        <div class="mistake-item">
+                            <div class="mistake-icon" style="background: #e74c3c;">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="mistake-content">
+                                <h4>PowerPoint: ファイルサイズが大きすぎる</h4>
+                                <p><strong>原因:</strong> 画像が圧縮されていない</p>
+                                <p><strong>対策:</strong> 画像を選択 → 「図の圧縮」 → 解像度を下げる</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 参考情報源 -->
+        <section class="section">
+            <div class="content-box">
+                <div class="reference-box">
+                    <h3><i class="fas fa-book"></i> 参考情報源</h3>
+                    <ul class="reference-list">
+                        <li>
+                            <strong>Microsoft 公式サポート</strong><br>
+                            <a href="https://support.microsoft.com/ja-jp/excel" target="_blank" rel="noopener noreferrer">Excel公式サポート</a> / 
+                            <a href="https://support.microsoft.com/ja-jp/powerpoint" target="_blank" rel="noopener noreferrer">PowerPoint公式サポート</a><br>
+                            関数リファレンス、チュートリアル、トラブルシューティング
+                        </li>
+                        <li>
+                            <strong>『できるExcel関数 データ処理の効率アップに役立つ本』</strong><br>
+                            インプレス、2023年<br>
+                            ビジネスで使える関数の実践的解説
+                        </li>
+                        <li>
+                            <strong>『一生使える見やすい資料のデザイン入門』</strong><br>
+                            森重湧太 著、インプレス、2016年<br>
+                            PowerPointデザインの基本原則
+                        </li>
+                        <li>
+                            <strong>『外資系コンサルのスライド作成術』</strong><br>
+                            山口周 著、東洋経済新報社、2012年<br>
+                            プロフェッショナルな資料作成テクニック
+                        </li>
+                        <li>
+                            <strong>日経BP『Excel関数逆引き辞典』</strong><br>
+                            実務で使える関数の逆引きリファレンス
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ページナビゲーション -->
+        <div class="page-navigation">
+            <a href="business-writing.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> 前へ：ビジネス文書</a>
+            <a href="trends.html" class="nav-btn next">次へ：研修トレンド <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 社員教育総合ガイド | 新入社員から中堅社員まで</p>
+            <p class="footer-note">本ガイドは教育・研修目的で自由にご活用いただけます。</p>
+        </div>
+    </footer>
+
+    <!-- トップに戻るボタン -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

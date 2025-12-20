@@ -112,6 +112,28 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ========================================
+// メールタブ切り替え（ビジネス文書ページ）
+// ========================================
+document.addEventListener('DOMContentLoaded', function() {
+    const emailTabs = document.querySelectorAll('.email-tab');
+    const emailTabContents = document.querySelectorAll('.email-tab-content');
+
+    emailTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+
+            // すべてのタブとコンテンツから active クラスを削除
+            emailTabs.forEach(t => t.classList.remove('active'));
+            emailTabContents.forEach(content => content.classList.remove('active'));
+
+            // クリックされたタブと対応するコンテンツに active クラスを追加
+            this.classList.add('active');
+            document.getElementById(targetTab).classList.add('active');
+        });
+    });
+});
+
+// ========================================
 // 印刷時の処理
 // ========================================
 window.addEventListener('beforeprint', function() {

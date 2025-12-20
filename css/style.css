@@ -30,9 +30,24 @@ html {
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.8;
     color: var(--text-dark);
     background-color: var(--light-bg);
+}
+
+/* リンクの基本スタイル */
+a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration-thickness: 2px;
 }
 
 .container {
@@ -76,7 +91,7 @@ header h1 i {
 }
 
 header .subtitle {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     opacity: 0.85;
     margin: 0;
     display: block;
@@ -147,11 +162,11 @@ nav.main-nav ul li a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.875rem 1.25rem;
+    padding: 1rem 1.5rem;
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     transition: var(--transition);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 500;
     border-bottom: 3px solid transparent;
 }
@@ -250,10 +265,10 @@ main {
 }
 
 .section h2 {
-    font-size: 2.25rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 3px solid var(--secondary-color);
     display: inline-block;
@@ -265,8 +280,8 @@ main {
 }
 
 .section h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--primary-color);
     margin: 2.5rem 0 1.5rem;
     padding-left: 1rem;
@@ -282,7 +297,7 @@ main {
     font-size: 1.125rem;
     color: var(--text-gray);
     margin-bottom: 2rem;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
 .content-box {
@@ -290,6 +305,60 @@ main {
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: var(--shadow-md);
+}
+
+.content-box p {
+    line-height: 1.9;
+    margin-bottom: 1.25rem;
+}
+
+.content-box ul,
+.content-box ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-box li {
+    margin-bottom: 0.75rem;
+    line-height: 1.9;
+}
+
+/* テーブル共通スタイル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+}
+
+table th,
+table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    line-height: 1.8;
+}
+
+table th {
+    background: var(--light-bg);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+table tr:hover {
+    background: rgba(52, 152, 219, 0.05);
+}
+
+/* テーブルのモバイル対応 */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+    
+    table th,
+    table td {
+        padding: 0.75rem 1rem;
+    }
 }
 
 /* 旧スタイルとの互換性 */

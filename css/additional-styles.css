@@ -1933,8 +1933,19 @@
 .structure-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
     margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .structure-grid {
+        gap: 1.5rem;
+    }
+    
+    .structure-card {
+        min-height: 120px;
+        padding: 1.5rem;
+    }
 }
 
 .structure-card {
@@ -2100,8 +2111,19 @@
 .quick-links-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 2.5rem;
     margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .quick-links-grid {
+        gap: 1.5rem;
+    }
+    
+    .quick-link-card {
+        min-height: 120px;
+        padding: 1.5rem;
+    }
 }
 
 .quick-link-card {
@@ -3362,5 +3384,718 @@
     .intro-message {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/* ========================================
+   ビジネス文書作成ページ専用スタイル
+======================================== */
+
+/* 文書作成の5原則 */
+.writing-principles {
+    margin: 3rem 0;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.principle-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.principle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.principle-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.principle-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.example-box {
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* PREP法 */
+.prep-method {
+    margin: 4rem 0;
+}
+
+.prep-diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 700px;
+}
+
+.prep-step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.prep-label {
+    width: 60px;
+    height: 60px;
+    background: var(--secondary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.prep-content {
+    flex: 1;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.prep-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.prep-example {
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--text-dark);
+}
+
+.prep-arrow {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+/* 5W1Hテーブル */
+.writing-framework {
+    margin: 3rem 0;
+}
+
+.framework-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    box-shadow: var(--shadow-md);
+}
+
+.framework-table thead {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.framework-table th,
+.framework-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.framework-table tbody tr:nth-child(even) {
+    background: var(--light-bg);
+}
+
+.framework-table tbody tr:hover {
+    background: #e8f4f8;
+}
+
+/* 文書構成ステップ */
+.doc-structure {
+    margin: 3rem 0;
+}
+
+.structure-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.structure-step {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    box-shadow: var(--shadow-md);
+}
+
+.step-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.step-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.step-content ul li {
+    padding: 0.4rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.step-content ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+/* テンプレートボックス */
+.template-box {
+    margin: 3rem 0;
+}
+
+.code-block {
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: #2c3e50;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Tipsセクション */
+.tips-section {
+    margin: 4rem 0;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.tip-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.tip-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--secondary-color), #5dade2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.tip-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tip-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tip-card ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.tip-card ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* 報告書の種類 */
+.report-types {
+    margin: 3rem 0;
+}
+
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.type-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.type-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--secondary-color), #5dade2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0 auto 1.5rem;
+}
+
+.type-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.type-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+/* 報告書のTips */
+.report-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.tip-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.tip-number {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.tip-content {
+    flex: 1;
+}
+
+.tip-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.tip-content p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* 提案書フロー */
+.proposal-structure {
+    margin: 3rem 0;
+}
+
+.proposal-flow {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.flow-step {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin: 1rem 0;
+}
+
+.flow-number {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--secondary-color), #5dade2);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.flow-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.flow-example {
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.flow-arrow {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+/* 提案書のTips */
+.proposal-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.tip-box {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.tip-box h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tip-box h4 i {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
+
+/* 稟議書・申請書 */
+.approval-basics {
+    margin: 3rem 0;
+}
+
+.basics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.basic-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.basic-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.basic-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--secondary-color), #5dade2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0 auto 1.5rem;
+}
+
+.basic-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* メール構造 */
+.email-structure {
+    margin: 3rem 0;
+}
+
+.structure-diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.structure-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.structure-label {
+    min-width: 120px;
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.structure-content {
+    flex: 1;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.structure-content p {
+    margin-bottom: 1rem;
+}
+
+.structure-example {
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* メールタブ */
+.email-templates {
+    margin: 3rem 0;
+}
+
+.email-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 2rem 0 1rem;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.email-tab {
+    background: transparent;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-gray);
+    border-bottom: 3px solid transparent;
+    transition: var(--transition);
+}
+
+.email-tab:hover {
+    color: var(--secondary-color);
+    background: var(--light-bg);
+}
+
+.email-tab.active {
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+}
+
+.email-tab-content {
+    display: none;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.email-tab-content.active {
+    display: block;
+}
+
+.email-tab-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.email-tab-content h4 i {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
+
+/* メールのTips */
+.email-tips {
+    margin: 4rem 0;
+}
+
+.tips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.tip-item-email {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.tip-item-email:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(5px);
+}
+
+.tip-number-email {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, var(--secondary-color), #5dade2);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.tip-text {
+    flex: 1;
+}
+
+.tip-text h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.tip-text p {
+    margin: 0;
+    line-height: 1.7;
+    color: var(--text-gray);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .principles-grid,
+    .types-grid,
+    .tips-grid,
+    .basics-grid,
+    .proposal-tips {
+        grid-template-columns: 1fr;
+    }
+
+    .prep-step,
+    .structure-item,
+    .tip-item {
+        flex-direction: column;
+    }
+
+    .structure-label {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .email-tabs {
+        flex-direction: column;
+    }
+
+    .email-tab {
+        width: 100%;
+        text-align: left;
+    }
+
+    .code-block pre {
+        font-size: 0.75rem;
+        padding: 1rem;
     }
 }

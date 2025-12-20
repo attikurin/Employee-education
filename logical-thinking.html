@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロジカルシンキング入門 | 社員教育総合ガイド 2025年版</title>
+    <meta name="description" content="論理的思考力を鍛える実践ガイド。MECE、ロジックツリー、フレームワーク思考など、問題解決に必須のスキルを習得">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additional-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <div>
+                <h1><i class="fas fa-graduation-cap"></i> 社員教育総合ガイド</h1>
+                <p class="subtitle">2025年版 ～新入社員から中堅社員まで～</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインナビゲーション -->
+    <nav class="main-nav" id="mainNav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> ホーム</a></li>
+                <li><a href="life100.html"><i class="fas fa-seedling"></i> 人生100年時代</a></li>
+                <li><a href="basic-skills.html"><i class="fas fa-users"></i> 社会人基礎力</a></li>
+                <li><a href="business-manner.html"><i class="fas fa-handshake"></i> ビジネスマナー</a></li>
+                <li><a href="beginner-guide.html"><i class="fas fa-user-graduate"></i> 新入社員ガイド</a></li>
+                <li><a href="business-writing.html"><i class="fas fa-pen"></i> ビジネス文書</a></li>
+                <li><a href="excel-powerpoint.html"><i class="fas fa-table"></i> Excel/PowerPoint</a></li>
+                <li><a href="logical-thinking.html" class="active"><i class="fas fa-brain"></i> ロジカルシンキング</a></li>
+                <li><a href="trends.html"><i class="fas fa-chart-line"></i> 研修トレンド</a></li>
+                <li><a href="design-tools.html"><i class="fas fa-tools"></i> 研修設計・ツール</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="container">
+        <section id="logical-thinking" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-brain"></i> ロジカルシンキング入門</h2>
+                <p class="lead">論理的思考力は、ビジネスパーソンに必須のスキルです。問題を構造的に整理し、筋道立てて考え、説得力のある結論を導く力を身につけましょう。</p>
+
+                <!-- イントロダクション -->
+                <div class="intro-message">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <h3>なぜロジカルシンキングが重要なのか</h3>
+                        <p>複雑な問題を整理し、適切な解決策を見つけ出すには、論理的思考力が不可欠です。MECE、ロジックツリー、帰納法・演繹法などのフレームワークを使いこなすことで、会議での説明、企画立案、問題解決など、あらゆるビジネスシーンで説得力が増します。</p>
+                    </div>
+                </div>
+
+                <!-- 目次 -->
+                <div class="guide-toc">
+                    <h3><i class="fas fa-list"></i> 目次</h3>
+                    <div class="toc-grid">
+                        <a href="#basics" class="toc-item">
+                            <i class="fas fa-book-open"></i>
+                            <h4>1. ロジカルシンキングの基礎</h4>
+                            <p>定義、必要性、3つの基本思考</p>
+                        </a>
+                        <a href="#mece" class="toc-item">
+                            <i class="fas fa-th"></i>
+                            <h4>2. MECE（ミーシー）</h4>
+                            <p>重複なく・漏れなく分類する技術</p>
+                        </a>
+                        <a href="#logic-tree" class="toc-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>3. ロジックツリー</h4>
+                            <p>問題を構造化して分解する</p>
+                        </a>
+                        <a href="#reasoning" class="toc-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h4>4. 帰納法と演繹法</h4>
+                            <p>2つの推論方法を使い分ける</p>
+                        </a>
+                        <a href="#frameworks" class="toc-item">
+                            <i class="fas fa-cubes"></i>
+                            <h4>5. 思考フレームワーク</h4>
+                            <p>3C、4P、SWOT分析など</p>
+                        </a>
+                        <a href="#practice" class="toc-item">
+                            <i class="fas fa-dumbbell"></i>
+                            <h4>6. 実践トレーニング</h4>
+                            <p>日常で鍛える5つの習慣</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. ロジカルシンキングの基礎 -->
+        <section id="basics" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-book-open"></i> 1. ロジカルシンキングの基礎</h2>
+
+                <div class="definition-box">
+                    <h3>ロジカルシンキングとは</h3>
+                    <p><strong>ロジカルシンキング（論理的思考）</strong>とは、物事を筋道立てて考え、矛盾なく結論を導き出す思考法です。感情や直感ではなく、<strong>事実とデータに基づいて論理的に判断</strong>します。</p>
+                </div>
+
+                <!-- なぜ必要か -->
+                <div class="why-important">
+                    <h3>なぜビジネスで必要なのか</h3>
+                    
+                    <div class="importance-grid">
+                        <div class="importance-card">
+                            <div class="importance-icon" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4>問題の本質を見抜く</h4>
+                            <p>表面的な現象ではなく、根本原因を特定できる</p>
+                        </div>
+
+                        <div class="importance-card">
+                            <div class="importance-icon" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>説得力のある説明</h4>
+                            <p>相手が納得する論理的な説明・提案ができる</p>
+                        </div>
+
+                        <div class="importance-card">
+                            <div class="importance-icon" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h4>効率的な意思決定</h4>
+                            <p>情報を整理し、最適な選択肢を素早く判断できる</p>
+                        </div>
+
+                        <div class="importance-card">
+                            <div class="importance-icon" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>チームでの合意形成</h4>
+                            <p>共通の論理で議論し、建設的な結論を導ける</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3つの基本思考 -->
+                <div class="three-thinking">
+                    <h3>ロジカルシンキングの3つの基本思考</h3>
+
+                    <div class="thinking-types">
+                        <div class="thinking-card">
+                            <div class="thinking-number">1</div>
+                            <div class="thinking-content">
+                                <h4>ゼロベース思考</h4>
+                                <p><strong>定義:</strong> 既成概念や過去の常識にとらわれず、まっさらな状態から考える</p>
+                                <div class="thinking-example">
+                                    <strong>例:</strong> 「今までこうだったから」ではなく「本当にこの方法がベストか?」と問い直す
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thinking-card">
+                            <div class="thinking-number">2</div>
+                            <div class="thinking-content">
+                                <h4>フレームワーク思考</h4>
+                                <p><strong>定義:</strong> 既存の分析枠組み（フレームワーク）を活用して、効率的に情報を整理する</p>
+                                <div class="thinking-example">
+                                    <strong>例:</strong> SWOT分析、3C分析、4P分析など、目的に応じて適切なフレームワークを選択
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thinking-card">
+                            <div class="thinking-number">3</div>
+                            <div class="thinking-content">
+                                <h4>オプション思考</h4>
+                                <p><strong>定義:</strong> 複数の選択肢を用意し、比較検討した上で最適解を選ぶ</p>
+                                <div class="thinking-example">
+                                    <strong>例:</strong> A案だけでなく、B案、C案も考え、それぞれのメリット・デメリットを評価
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. MECE（ミーシー） -->
+        <section id="mece" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-th"></i> 2. MECE（ミーシー）</h2>
+
+                <div class="mece-definition">
+                    <h3>MECEとは</h3>
+                    <p><strong>MECE（ミーシー）</strong>は、「<strong>M</strong>utually <strong>E</strong>xclusive, <strong>C</strong>ollectively <strong>E</strong>xhaustive」の略です。</p>
+                    <div class="mece-meaning">
+                        <div class="mece-part">
+                            <span class="mece-label">ME (Mutually Exclusive)</span>
+                            <span class="mece-value">= 互いに重複しない（Mutually Exclusive）</span>
+                        </div>
+                        <div class="mece-part">
+                            <span class="mece-label">CE (Collectively Exhaustive)</span>
+                            <span class="mece-value">= 全体を網羅する（Collectively Exhaustive）</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem;"><strong>要約:</strong> 「ダブりなく、モレなく」分類すること</p>
+                </div>
+
+                <!-- MECEの重要性 -->
+                <div class="mece-importance">
+                    <h3>なぜMECEが重要なのか</h3>
+                    <ul class="importance-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>分析の精度向上:</strong> 問題を正確に把握できる</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>議論の効率化:</strong> 無駄な重複や漏れがなくなる</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>説得力の向上:</strong> 網羅的な分析で相手を納得させられる</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>意思決定の質向上:</strong> 全選択肢を検討した上で判断できる</li>
+                    </ul>
+                </div>
+
+                <!-- 良い例・悪い例 -->
+                <div class="mece-examples">
+                    <h3>MECEの具体例</h3>
+
+                    <div class="example-comparison">
+                        <div class="bad-example">
+                            <h4><i class="fas fa-times-circle"></i> 悪い例（MECE でない）</h4>
+                            <div class="example-content">
+                                <p><strong>テーマ:</strong> 顧客セグメント分類</p>
+                                <ul>
+                                    <li>20代</li>
+                                    <li>30代</li>
+                                    <li>女性</li>
+                                    <li>会社員</li>
+                                </ul>
+                                <div class="problem">
+                                    <strong>問題点:</strong>
+                                    <ul>
+                                        <li>「20代」と「女性」が重複（20代女性はどちらにも該当）</li>
+                                        <li>「40代以上」が漏れている</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="good-example">
+                            <h4><i class="fas fa-check-circle"></i> 良い例（MECE）</h4>
+                            <div class="example-content">
+                                <p><strong>テーマ:</strong> 顧客セグメント分類</p>
+                                <p><strong>切り口1: 年代別</strong></p>
+                                <ul>
+                                    <li>20代</li>
+                                    <li>30代</li>
+                                    <li>40代</li>
+                                    <li>50代以上</li>
+                                </ul>
+                                <p style="margin-top: 1rem;"><strong>切り口2: 性別</strong></p>
+                                <ul>
+                                    <li>男性</li>
+                                    <li>女性</li>
+                                    <li>回答しない</li>
+                                </ul>
+                                <div class="benefit">
+                                    <strong>メリット:</strong> 重複なく、全体を網羅している
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MECEの切り口 -->
+                <div class="mece-perspectives">
+                    <h3>MECEの典型的な切り口</h3>
+
+                    <table class="mece-table">
+                        <thead>
+                            <tr>
+                                <th>切り口</th>
+                                <th>分類例</th>
+                                <th>用途</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>二項対立</strong></td>
+                                <td>男性 / 女性<br>国内 / 海外<br>既存 / 新規</td>
+                                <td>最もシンプルな分類</td>
+                            </tr>
+                            <tr>
+                                <td><strong>プロセス</strong></td>
+                                <td>調査 → 企画 → 実行 → 評価</td>
+                                <td>時系列での整理</td>
+                            </tr>
+                            <tr>
+                                <td><strong>要素分解</strong></td>
+                                <td>売上 = 客数 × 客単価<br>利益 = 売上 - 費用</td>
+                                <td>数値分析</td>
+                            </tr>
+                            <tr>
+                                <td><strong>階層分類</strong></td>
+                                <td>全社 → 部門 → チーム → 個人</td>
+                                <td>組織や階層の整理</td>
+                            </tr>
+                            <tr>
+                                <td><strong>マトリックス</strong></td>
+                                <td>緊急度 × 重要度（4象限）</td>
+                                <td>優先順位付け</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ロジックツリー -->
+        <section id="logic-tree" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-project-diagram"></i> 3. ロジックツリー</h2>
+
+                <div class="logic-tree-definition">
+                    <h3>ロジックツリーとは</h3>
+                    <p><strong>ロジックツリー</strong>は、問題や課題を<strong>樹形図（ツリー）状に分解</strong>していく手法です。MECEの原則を守りながら、大きな問題を小さな要素に分けていくことで、問題の全体像を把握し、解決策を見つけやすくします。</p>
+                </div>
+
+                <!-- ロジックツリーの種類 -->
+                <div class="tree-types">
+                    <h3>ロジックツリーの3つの種類</h3>
+
+                    <div class="tree-type-grid">
+                        <div class="tree-type-card">
+                            <div class="tree-type-header" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                                <i class="fas fa-question-circle"></i>
+                                <h4>Whatツリー</h4>
+                            </div>
+                            <div class="tree-type-body">
+                                <p><strong>用途:</strong> 問題の構造を明らかにする</p>
+                                <p><strong>質問:</strong> 「それは何か?」「何に分解できるか?」</p>
+                                <div class="tree-example">
+                                    <strong>例:</strong> 売上減少の要因は何か?<br>
+                                    → 客数減少、客単価減少に分解
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-type-card">
+                            <div class="tree-type-header" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                                <i class="fas fa-question"></i>
+                                <h4>Whyツリー</h4>
+                            </div>
+                            <div class="tree-type-body">
+                                <p><strong>用途:</strong> 原因を探る</p>
+                                <p><strong>質問:</strong> 「なぜそうなったのか?」</p>
+                                <div class="tree-example">
+                                    <strong>例:</strong> なぜ客数が減少したのか?<br>
+                                    → 競合出店、商品力低下、接客品質低下
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tree-type-card">
+                            <div class="tree-type-header" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Howツリー</h4>
+                            </div>
+                            <div class="tree-type-body">
+                                <p><strong>用途:</strong> 解決策を考える</p>
+                                <p><strong>質問:</strong> 「どうすれば解決できるか?」</p>
+                                <div class="tree-example">
+                                    <strong>例:</strong> どうすれば客数を増やせるか?<br>
+                                    → 新規顧客獲得、既存顧客のリピート促進
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 作成手順 -->
+                <div class="tree-steps">
+                    <h3>ロジックツリーの作成手順</h3>
+
+                    <div class="steps-list">
+                        <div class="step-item-lt">
+                            <div class="step-num-lt">STEP 1</div>
+                            <div class="step-content-lt">
+                                <h4>テーマを決める</h4>
+                                <p>解決したい問題や分析したい対象を明確にする</p>
+                                <div class="step-example">例: 「売上を20%向上させる方法」</div>
+                            </div>
+                        </div>
+
+                        <div class="step-item-lt">
+                            <div class="step-num-lt">STEP 2</div>
+                            <div class="step-content-lt">
+                                <h4>第1階層で大分類</h4>
+                                <p>MECEを意識して、大きく2～5つに分ける</p>
+                                <div class="step-example">例: 売上 = 客数 × 客単価</div>
+                            </div>
+                        </div>
+
+                        <div class="step-item-lt">
+                            <div class="step-num-lt">STEP 3</div>
+                            <div class="step-content-lt">
+                                <h4>第2階層以降でさらに分解</h4>
+                                <p>各要素をMECEで細分化（通常3～4階層まで）</p>
+                                <div class="step-example">例: 客数 = 新規客数 + 既存客数</div>
+                            </div>
+                        </div>
+
+                        <div class="step-item-lt">
+                            <div class="step-num-lt">STEP 4</div>
+                            <div class="step-content-lt">
+                                <h4>重要なポイントを特定</h4>
+                                <p>最も影響の大きい要素（ボトルネック）を見つける</p>
+                                <div class="step-example">例: 新規客数の減少が最大要因と判明</div>
+                            </div>
+                        </div>
+
+                        <div class="step-item-lt">
+                            <div class="step-num-lt">STEP 5</div>
+                            <div class="step-content-lt">
+                                <h4>解決策を考える</h4>
+                                <p>特定した重点課題に対する具体的な施策を立案</p>
+                                <div class="step-example">例: 新規客向けのキャンペーン実施</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 実例 -->
+                <div class="tree-example-full">
+                    <h3>ロジックツリーの実例</h3>
+                    <div class="example-box-tree">
+                        <h4>テーマ: カフェの売上向上施策</h4>
+                        <div class="tree-diagram">
+                            <div class="tree-level-0">
+                                <div class="tree-node root">売上向上</div>
+                            </div>
+                            <div class="tree-branches">
+                                <div class="tree-branch">
+                                    <div class="tree-level-1">
+                                        <div class="tree-node">客数増加</div>
+                                    </div>
+                                    <div class="tree-level-2">
+                                        <div class="tree-node-small">新規顧客獲得</div>
+                                        <div class="tree-node-small">リピート促進</div>
+                                        <div class="tree-node-small">来店頻度向上</div>
+                                    </div>
+                                </div>
+                                <div class="tree-branch">
+                                    <div class="tree-level-1">
+                                        <div class="tree-node">客単価向上</div>
+                                    </div>
+                                    <div class="tree-level-2">
+                                        <div class="tree-node-small">メニュー単価UP</div>
+                                        <div class="tree-node-small">追加注文促進</div>
+                                        <div class="tree-node-small">セット販売</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 帰納法と演繹法 -->
+        <section id="reasoning" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-exchange-alt"></i> 4. 帰納法と演繹法</h2>
+
+                <div class="reasoning-intro">
+                    <p>論理的思考には、2つの代表的な<strong>推論方法</strong>があります。状況に応じて使い分けることで、説得力のある結論を導けます。</p>
+                </div>
+
+                <!-- 帰納法 -->
+                <div class="reasoning-type">
+                    <div class="reasoning-header" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                        <i class="fas fa-arrow-up"></i>
+                        <h3>帰納法（きのうほう / Induction）</h3>
+                    </div>
+                    <div class="reasoning-body">
+                        <p><strong>定義:</strong> 複数の<strong>具体的な事例</strong>から、<strong>一般的な法則や結論</strong>を導き出す推論方法</p>
+                        <p><strong>思考の流れ:</strong> 個別の事実 → 共通点を発見 → 一般化</p>
+
+                        <div class="reasoning-structure">
+                            <h4>構造</h4>
+                            <div class="structure-box">
+                                <div class="structure-line">【事例1】A社は顧客満足度が高く、売上も好調だ</div>
+                                <div class="structure-line">【事例2】B社も顧客満足度が高く、売上も好調だ</div>
+                                <div class="structure-line">【事例3】C社も顧客満足度が高く、売上も好調だ</div>
+                                <div class="structure-arrow">↓ 共通点を見つける</div>
+                                <div class="structure-conclusion">【結論】顧客満足度が高い企業は売上も好調である（可能性が高い）</div>
+                            </div>
+                        </div>
+
+                        <div class="reasoning-merit-demerit">
+                            <div class="merit">
+                                <h4><i class="fas fa-check-circle"></i> メリット</h4>
+                                <ul>
+                                    <li>実例に基づくため説得力がある</li>
+                                    <li>新しい発見や仮説を生み出せる</li>
+                                    <li>データ分析に適している</li>
+                                </ul>
+                            </div>
+                            <div class="demerit">
+                                <h4><i class="fas fa-exclamation-triangle"></i> 注意点</h4>
+                                <ul>
+                                    <li>事例が少ないと結論が不正確</li>
+                                    <li>偶然の一致を法則と誤認する危険</li>
+                                    <li>「絶対」とは言い切れない</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="reasoning-use-case">
+                            <h4>ビジネスでの活用例</h4>
+                            <ul>
+                                <li>顧客アンケート結果から傾向を分析</li>
+                                <li>複数の成功事例から成功パターンを導出</li>
+                                <li>市場調査データから仮説を立てる</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 演繹法 -->
+                <div class="reasoning-type">
+                    <div class="reasoning-header" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                        <i class="fas fa-arrow-down"></i>
+                        <h3>演繹法（えんえきほう / Deduction）</h3>
+                    </div>
+                    <div class="reasoning-body">
+                        <p><strong>定義:</strong> <strong>一般的な法則やルール</strong>から、<strong>個別の結論</strong>を導き出す推論方法</p>
+                        <p><strong>思考の流れ:</strong> 一般的法則 → 個別の事実に適用 → 結論</p>
+
+                        <div class="reasoning-structure">
+                            <h4>構造（三段論法）</h4>
+                            <div class="structure-box">
+                                <div class="structure-line">【大前提】すべての人間は死ぬ（一般的な法則）</div>
+                                <div class="structure-line">【小前提】ソクラテスは人間である（個別の事実）</div>
+                                <div class="structure-arrow">↓ 論理的に導く</div>
+                                <div class="structure-conclusion">【結論】ゆえに、ソクラテスは死ぬ（必然的結論）</div>
+                            </div>
+                        </div>
+
+                        <div class="reasoning-merit-demerit">
+                            <div class="merit">
+                                <h4><i class="fas fa-check-circle"></i> メリット</h4>
+                                <ul>
+                                    <li>前提が正しければ結論も確実</li>
+                                    <li>論理的な説得力が高い</li>
+                                    <li>再現性がある</li>
+                                </ul>
+                            </div>
+                            <div class="demerit">
+                                <h4><i class="fas fa-exclamation-triangle"></i> 注意点</h4>
+                                <ul>
+                                    <li>前提が間違っていると結論も誤る</li>
+                                    <li>新しい発見は生まれにくい</li>
+                                    <li>前提の妥当性の検証が必要</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="reasoning-use-case">
+                            <h4>ビジネスでの活用例</h4>
+                            <ul>
+                                <li>業界の一般的なセオリーを自社に適用</li>
+                                <li>法律やルールに基づいた判断</li>
+                                <li>過去の成功法則を新プロジェクトに応用</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 使い分け -->
+                <div class="reasoning-comparison">
+                    <h3>帰納法と演繹法の使い分け</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>項目</th>
+                                <th>帰納法</th>
+                                <th>演繹法</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>推論の方向</strong></td>
+                                <td>個別 → 一般</td>
+                                <td>一般 → 個別</td>
+                            </tr>
+                            <tr>
+                                <td><strong>適した場面</strong></td>
+                                <td>新しい発見、仮説構築</td>
+                                <td>論理的な証明、説得</td>
+                            </tr>
+                            <tr>
+                                <td><strong>結論の確実性</strong></td>
+                                <td>「おそらく正しい」（蓋然性）</td>
+                                <td>「必ず正しい」（必然性）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ビジネス例</strong></td>
+                                <td>市場調査、データ分析</td>
+                                <td>戦略立案、意思決定</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 思考フレームワーク -->
+        <section id="frameworks" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-cubes"></i> 5. 思考フレームワーク</h2>
+
+                <div class="frameworks-intro">
+                    <p>ビジネスシーンでよく使われる<strong>分析フレームワーク</strong>を紹介します。これらを使いこなすことで、効率的に情報を整理し、戦略を立案できます。</p>
+                </div>
+
+                <!-- 3C分析 -->
+                <div class="framework-item">
+                    <div class="framework-header" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                        <i class="fas fa-users"></i>
+                        <h3>3C分析</h3>
+                    </div>
+                    <div class="framework-body">
+                        <p><strong>用途:</strong> 市場環境を分析し、自社の戦略を考える</p>
+                        <p><strong>3つのC:</strong></p>
+                        <div class="three-c">
+                            <div class="c-item">
+                                <div class="c-label">Customer<br>（市場・顧客）</div>
+                                <div class="c-content">
+                                    <ul>
+                                        <li>市場規模・成長性</li>
+                                        <li>顧客ニーズ</li>
+                                        <li>購買行動</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="c-item">
+                                <div class="c-label">Competitor<br>（競合）</div>
+                                <div class="c-content">
+                                    <ul>
+                                        <li>競合の戦略</li>
+                                        <li>強み・弱み</li>
+                                        <li>シェア・ポジション</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="c-item">
+                                <div class="c-label">Company<br>（自社）</div>
+                                <div class="c-content">
+                                    <ul>
+                                        <li>自社の強み・弱み</li>
+                                        <li>経営資源</li>
+                                        <li>競争優位性</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framework-result">
+                            <strong>分析結果の活用:</strong> 3Cを総合的に分析し、自社の勝ち筋（成功要因）を見つける
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SWOT分析 -->
+                <div class="framework-item">
+                    <div class="framework-header" style="background: linear-gradient(135deg, #27ae60, #229954);">
+                        <i class="fas fa-th"></i>
+                        <h3>SWOT分析</h3>
+                    </div>
+                    <div class="framework-body">
+                        <p><strong>用途:</strong> 内部環境と外部環境を整理し、戦略を立案する</p>
+                        <div class="swot-matrix">
+                            <table class="swot-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th style="background: #3498db; color: white;">プラス要因</th>
+                                        <th style="background: #e74c3c; color: white;">マイナス要因</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th style="background: #27ae60; color: white;">内部環境<br>（自社でコントロール可能）</th>
+                                        <td class="swot-cell strength">
+                                            <strong>S: Strength（強み）</strong>
+                                            <ul>
+                                                <li>技術力</li>
+                                                <li>ブランド力</li>
+                                                <li>人材</li>
+                                            </ul>
+                                        </td>
+                                        <td class="swot-cell weakness">
+                                            <strong>W: Weakness（弱み）</strong>
+                                            <ul>
+                                                <li>資金不足</li>
+                                                <li>認知度の低さ</li>
+                                                <li>生産能力</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="background: #e67e22; color: white;">外部環境<br>（自社ではコントロール不可）</th>
+                                        <td class="swot-cell opportunity">
+                                            <strong>O: Opportunity（機会）</strong>
+                                            <ul>
+                                                <li>市場の成長</li>
+                                                <li>規制緩和</li>
+                                                <li>技術革新</li>
+                                            </ul>
+                                        </td>
+                                        <td class="swot-cell threat">
+                                            <strong>T: Threat（脅威）</strong>
+                                            <ul>
+                                                <li>競合の台頭</li>
+                                                <li>市場縮小</li>
+                                                <li>法規制強化</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="swot-strategies">
+                            <h4>SWOT分析から導く4つの戦略</h4>
+                            <ul>
+                                <li><strong>S × O:</strong> 強みを活かして機会を最大化</li>
+                                <li><strong>W × O:</strong> 弱みを克服して機会をつかむ</li>
+                                <li><strong>S × T:</strong> 強みで脅威を回避・軽減</li>
+                                <li><strong>W × T:</strong> 最悪シナリオの回避策を考える</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4P分析 -->
+                <div class="framework-item">
+                    <div class="framework-header" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>4P分析（マーケティングミックス）</h3>
+                    </div>
+                    <div class="framework-body">
+                        <p><strong>用途:</strong> マーケティング戦略を立案する</p>
+                        <div class="four-p">
+                            <div class="p-item">
+                                <div class="p-icon" style="background: #3498db;">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <h4>Product（製品）</h4>
+                                <p>何を売るか</p>
+                                <ul>
+                                    <li>品質</li>
+                                    <li>機能</li>
+                                    <li>デザイン</li>
+                                    <li>ブランド</li>
+                                </ul>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-icon" style="background: #27ae60;">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <h4>Price（価格）</h4>
+                                <p>いくらで売るか</p>
+                                <ul>
+                                    <li>定価</li>
+                                    <li>割引</li>
+                                    <li>支払条件</li>
+                                    <li>価格戦略</li>
+                                </ul>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-icon" style="background: #e67e22;">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <h4>Place（流通）</h4>
+                                <p>どこで売るか</p>
+                                <ul>
+                                    <li>販売チャネル</li>
+                                    <li>流通経路</li>
+                                    <li>店舗立地</li>
+                                    <li>在庫管理</li>
+                                </ul>
+                            </div>
+                            <div class="p-item">
+                                <div class="p-icon" style="background: #9b59b6;">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <h4>Promotion（販促）</h4>
+                                <p>どう伝えるか</p>
+                                <ul>
+                                    <li>広告</li>
+                                    <li>PR</li>
+                                    <li>セールスプロモーション</li>
+                                    <li>SNSマーケティング</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 実践トレーニング -->
+        <section id="practice" class="section">
+            <div class="content-box">
+                <h2><i class="fas fa-dumbbell"></i> 6. 実践トレーニング</h2>
+
+                <div class="practice-intro">
+                    <p>ロジカルシンキングは、日常の習慣で鍛えることができます。以下の5つの習慣を取り入れて、論理的思考力を高めましょう。</p>
+                </div>
+
+                <div class="practice-habits">
+                    <div class="habit-card">
+                        <div class="habit-number">習慣 1</div>
+                        <div class="habit-content">
+                            <h3>「なぜ?」を5回繰り返す</h3>
+                            <p><strong>方法:</strong> 問題に対して「なぜ?」を5回繰り返し、根本原因を探る（トヨタ生産方式の手法）</p>
+                            <div class="habit-example">
+                                <strong>例:</strong><br>
+                                Q1: なぜ納期に遅れたのか? → 設計変更があったから<br>
+                                Q2: なぜ設計変更があったのか? → 顧客要望が変わったから<br>
+                                Q3: なぜ顧客要望が変わったのか? → ヒアリングが不十分だったから<br>
+                                Q4: なぜヒアリングが不十分だったのか? → 標準質問項目がなかったから<br>
+                                Q5: なぜ標準質問項目がなかったのか? → 業務マニュアルが未整備だったから<br>
+                                <strong>→ 根本原因: 業務マニュアルの未整備</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="habit-card">
+                        <div class="habit-number">習慣 2</div>
+                        <div class="habit-content">
+                            <h3>数字で考える</h3>
+                            <p><strong>方法:</strong> 「多い」「少ない」ではなく、具体的な数値で表現する</p>
+                            <div class="habit-example">
+                                <strong>Before:</strong> 「売上が減少している」<br>
+                                <strong>After:</strong> 「売上が前年比15%減少している。特に20代顧客層が30%減」<br>
+                                → 数値化することで、問題の重大性や優先順位が明確になる
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="habit-card">
+                        <div class="habit-number">習慣 3</div>
+                        <div class="habit-content">
+                            <h3>結論から話す</h3>
+                            <p><strong>方法:</strong> 「結論 → 理由 → 具体例」の順で説明する（PREP法）</p>
+                            <div class="habit-example">
+                                <strong>悪い例:</strong> 「競合が増えて、広告費も高騰して、人手も足りなくて...だから新規事業は難しいと思います」<br>
+                                <strong>良い例:</strong> 「新規事業への参入は見送るべきです。理由は3つあります。1つ目は競合過多、2つ目は...」<br>
+                                → 結論ファーストで相手の理解が早まる
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="habit-card">
+                        <div class="habit-number">習慣 4</div>
+                        <div class="habit-content">
+                            <h3>複数の選択肢を考える</h3>
+                            <p><strong>方法:</strong> 1つの案だけでなく、必ず2～3つの選択肢を用意する</p>
+                            <div class="habit-example">
+                                <strong>例: コスト削減の方法</strong><br>
+                                A案: 外注先を変更（コスト▲20%、品質リスク中）<br>
+                                B案: 内製化を進める（コスト▲15%、初期投資大）<br>
+                                C案: 仕様を見直す（コスト▲10%、顧客影響小）<br>
+                                → 複数案を比較することで、最適な判断ができる
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="habit-card">
+                        <div class="habit-number">習慣 5</div>
+                        <div class="habit-content">
+                            <h3>図解で整理する</h3>
+                            <p><strong>方法:</strong> 複雑な情報は、図・表・ロジックツリーなどで視覚化する</p>
+                            <div class="habit-example">
+                                <strong>効果:</strong><br>
+                                ✅ 全体像が一目で把握できる<br>
+                                ✅ 漏れ・重複が見つけやすい<br>
+                                ✅ 相手に説明しやすくなる<br>
+                                ✅ 自分の思考も整理される
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- おすすめツール -->
+                <div class="practice-tools">
+                    <h3>ロジカルシンキング支援ツール</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-pencil-alt"></i>
+                            <h4>ホワイトボード・ノート</h4>
+                            <p>手書きで図解すると思考が整理される</p>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-sitemap"></i>
+                            <h4>マインドマップツール</h4>
+                            <p>XMind, MindMeisterなど</p>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-table"></i>
+                            <h4>Excel / Googleスプレッドシート</h4>
+                            <p>データ分析、表作成に最適</p>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-file-powerpoint"></i>
+                            <h4>PowerPoint / Googleスライド</h4>
+                            <p>図解・プレゼン資料作成</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 参考情報源 -->
+        <section class="section">
+            <div class="content-box">
+                <div class="reference-box">
+                    <h3><i class="fas fa-book"></i> 参考情報源</h3>
+                    <ul class="reference-list">
+                        <li>
+                            <strong>『ロジカル・シンキング―論理的な思考と構成のスキル』</strong><br>
+                            照屋華子、岡田恵子 著、東洋経済新報社、2001年<br>
+                            MECEやロジックツリーの基本を学べる定番書
+                        </li>
+                        <li>
+                            <strong>『考える技術・書く技術―問題解決力を伸ばすピラミッド原則』</strong><br>
+                            バーバラ・ミント 著、ダイヤモンド社、1999年<br>
+                            マッキンゼー流の論理的思考法
+                        </li>
+                        <li>
+                            <strong>『イシューからはじめよ―知的生産の「シンプルな本質」』</strong><br>
+                            安宅和人 著、英治出版、2010年<br>
+                            問題設定の重要性を説く名著
+                        </li>
+                        <li>
+                            <strong>『地頭力を鍛える 問題解決に活かす「フェルミ推定」』</strong><br>
+                            細谷功 著、東洋経済新報社、2007年<br>
+                            フェルミ推定で論理的思考力を鍛える
+                        </li>
+                        <li>
+                            <strong>経済産業省「社会人基礎力」</strong><br>
+                            <a href="https://www.meti.go.jp/policy/kisoryoku/" target="_blank" rel="noopener noreferrer">https://www.meti.go.jp/policy/kisoryoku/</a><br>
+                            「考え抜く力」の育成に関する公的指針
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ページナビゲーション -->
+        <div class="page-navigation">
+            <a href="excel-powerpoint.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> 前へ：Excel/PowerPoint</a>
+            <a href="trends.html" class="nav-btn next">次へ：研修トレンド <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 社員教育総合ガイド | 新入社員から中堅社員まで</p>
+            <p class="footer-note">本ガイドは教育・研修目的で自由にご活用いただけます。</p>
+        </div>
+    </footer>
+
+    <!-- トップに戻るボタン -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
