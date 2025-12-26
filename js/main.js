@@ -161,4 +161,45 @@ window.addEventListener('beforeprint', function() {
     });
 });
 
+// ========================================
+// アクセシビリティ強化: Font Awesomeアイコンに aria-hidden 属性を自動追加
+// ========================================
+document.addEventListener('DOMContentLoaded', function() {
+    // すべてのFont Awesomeアイコン（<i class="fas ...")にaria-hidden="true"を追加
+    const icons = document.querySelectorAll('i.fas, i.far, i.fab, i.fal');
+    icons.forEach(icon => {
+        if (!icon.hasAttribute('aria-hidden')) {
+            icon.setAttribute('aria-hidden', 'true');
+        }
+    });
+});
+
+// ========================================
+// ダークモード切り替え
+// ========================================
+document.addEventListener('DOMContentLoaded', function() {
+    // ダークモードボタンを作成
+    const darkModeToggle = document.createElement('button');
+    darkModeToggle.className = 'dark-mode-toggle';
+    darkModeToggle.setAttribute('aria-label', 'ダークモード切り替え');
+    darkModeToggle.innerHTML = `
+        <i class="fas fa-moon icon-dark" aria-hidden="true"></i>
+        <i class="fas fa-sun icon-light" aria-hidden="true"></i>
+    `;
+    document.body.appendChild(darkModeToggle);
+
+    // ローカルストレージからダークモード設定を取得
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+    }
+
+    // ボタンクリックでダークモード切り替え
+    darkModeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        const isNowDarkMode = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isNowDarkMode);
+    });
+});
+
 console.log('社員教育総合ガイド 2025 - JavaScript loaded successfully');

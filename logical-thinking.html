@@ -7,6 +7,7 @@
     <meta name="description" content="論理的思考力を鍛える実践ガイド。MECE、ロジックツリー、フレームワーク思考など、問題解決に必須のスキルを習得">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/additional-styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="css/print.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -920,11 +921,17 @@
             </div>
         </section>
 
+        <!-- 理解度チェッククイズ -->
+        <section class="section">
+            <h2><i class="fas fa-question-circle" aria-hidden="true"></i> 理解度チェッククイズ</h2>
+            <div id="logical-thinking-quiz"></div>
+        </section>
+
         <!-- 参考情報源 -->
         <section class="section">
             <div class="content-box">
                 <div class="reference-box">
-                    <h3><i class="fas fa-book"></i> 参考情報源</h3>
+                    <h3><i class="fas fa-book" aria-hidden="true"></i> 参考情報源</h3>
                     <ul class="reference-list">
                         <li>
                             <strong>『ロジカル・シンキング―論理的な思考と構成のスキル』</strong><br>
@@ -982,6 +989,70 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <script src="js/quiz.js"></script>
+    <script>
+        // ロジカルシンキングクイズデータ
+        const logicalThinkingQuizData = [
+            {
+                question: 'MECEの原則とは何ですか？',
+                options: [
+                    '「ダブりなく・モレなく」分類すること',
+                    '「速く・正確に」分析すること',
+                    '「シンプルに・明確に」説明すること',
+                    '「論理的に・体系的に」整理すること'
+                ],
+                correct: 0,
+                explanation: 'MECEは「Mutually Exclusive, Collectively Exhaustive」の略で、「互いに重複せず、全体として漏れがない」という分類の原則です。'
+            },
+            {
+                question: '帰納法の説明として正しいものはどれですか？',
+                options: [
+                    '一般的な法則から個別の結論を導く推論方法',
+                    '複数の具体例から一般的な結論を導く推論方法',
+                    '原因から結果を予測する推論方法',
+                    '仮説を検証して結論を導く推論方法'
+                ],
+                correct: 1,
+                explanation: '帰納法は、複数の具体的な事例や観察から共通のパターンを見出し、一般的な結論や法則を導き出す推論方法です。'
+            },
+            {
+                question: 'ロジックツリーの「Whyツリー」の目的は何ですか？',
+                options: [
+                    '問題の構成要素を分解する',
+                    '問題の原因を深堀りする',
+                    '解決策を体系的に整理する',
+                    '目標達成の手段を列挙する'
+                ],
+                correct: 1,
+                explanation: 'Whyツリーは「なぜ？」を繰り返すことで問題の原因を深堀りし、根本原因を特定するためのツールです。'
+            },
+            {
+                question: '3C分析で分析する対象は何ですか？',
+                options: [
+                    'Cost（コスト）、Chance（チャンス）、Change（変化）',
+                    'Customer（顧客）、Competitor（競合）、Company（自社）',
+                    'Culture（文化）、Communication（コミュニケーション）、Cooperation（協力）',
+                    'Create（創造）、Control（管理）、Check（確認）'
+                ],
+                correct: 1,
+                explanation: '3C分析は、Customer（顧客）、Competitor（競合）、Company（自社）の3つの観点から事業環境を分析するフレームワークです。'
+            },
+            {
+                question: 'SWOT分析の「O」は何を意味しますか？',
+                options: [
+                    'Objective（目標）',
+                    'Operation（運営）',
+                    'Opportunity（機会）',
+                    'Organization（組織）'
+                ],
+                correct: 2,
+                explanation: 'SWOT分析のOはOpportunity（機会）を意味します。外部環境における好機やチャンスを分析します。'
+            }
+        ];
+
+        // クイズの初期化
+        new Quiz(logicalThinkingQuizData, 'logical-thinking-quiz');
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>

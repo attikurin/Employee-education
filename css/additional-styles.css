@@ -2995,6 +2995,548 @@
     .print-button {
         display: none !important;
     }
+    .download-buttons {
+        display: none !important;
+    }
+}
+
+/* ========================================
+   ダウンロードボタン
+======================================== */
+.download-buttons {
+    position: fixed;
+    bottom: 160px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.download-button {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.download-button:hover {
+    background: linear-gradient(135deg, #229954 0%, #1e8449 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4);
+}
+
+.download-button:active {
+    transform: translateY(0);
+}
+
+.download-button i {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .download-buttons {
+        bottom: 140px;
+        right: 15px;
+    }
+    
+    .download-button {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .download-button span {
+        display: none;
+    }
+    
+    .download-button i {
+        margin: 0;
+    }
+}
+
+/* ========================================
+   クイズ機能
+======================================== */
+.quiz-container {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.quiz-header {
+    margin-bottom: 2rem;
+}
+
+.quiz-progress {
+    background: #e0e0e0;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #3498db 0%, #2980b9 100%);
+    transition: width 0.3s ease;
+}
+
+.quiz-counter {
+    text-align: right;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.quiz-question {
+    margin-bottom: 2rem;
+}
+
+.quiz-question h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.quiz-options {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.quiz-option {
+    background: white;
+    border: 2px solid var(--border-color);
+    padding: 1.2rem;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.quiz-option:hover:not(:disabled) {
+    border-color: var(--secondary-color);
+    background: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.quiz-option:disabled {
+    cursor: not-allowed;
+}
+
+.quiz-option.correct {
+    border-color: var(--success-color);
+    background: #d4edda;
+}
+
+.quiz-option.incorrect {
+    border-color: var(--accent-color);
+    background: #f8d7da;
+}
+
+.quiz-feedback {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.feedback-correct {
+    background: #d4edda;
+    border-left: 4px solid var(--success-color);
+    padding: 1rem;
+}
+
+.feedback-correct i {
+    color: var(--success-color);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.feedback-incorrect {
+    background: #f8d7da;
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem;
+}
+
+.feedback-incorrect i {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.quiz-navigation {
+    text-align: center;
+}
+
+.quiz-next {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%);
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-next:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* クイズ結果 */
+.quiz-results {
+    text-align: center;
+    padding: 2rem;
+}
+
+.results-emoji {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.quiz-results h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.results-score {
+    margin: 2rem 0;
+}
+
+.score-circle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.score-number {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.score-total {
+    font-size: 1.5rem;
+}
+
+.score-percentage {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.results-message {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin: 2rem 0;
+}
+
+.results-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.result-item.correct {
+    background: #d4edda;
+}
+
+.result-item.incorrect {
+    background: #f8d7da;
+}
+
+.result-number {
+    font-weight: 600;
+}
+
+.result-status i {
+    margin-right: 0.3rem;
+}
+
+.quiz-retry {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%);
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+}
+
+.quiz-retry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* ========================================
+   進捗トラッキング
+======================================== */
+.progress-dashboard {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+
+.progress-dashboard h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.overall-progress {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.progress-circle {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.progress-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.progress-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+.progress-list {
+    margin: 2rem 0;
+}
+
+.progress-item {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.3s ease;
+}
+
+.progress-item:hover {
+    background: #f8f9fa;
+}
+
+.progress-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-item-name {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.progress-item-score {
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+.progress-item-score i {
+    margin-right: 0.3rem;
+}
+
+.progress-item-pending {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.progress-item-date {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-top: 0.5rem;
+}
+
+.progress-reset {
+    background: white;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+}
+
+.progress-reset:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* ========================================
+   アニメーション強化
+======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* アニメーションクラス */
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+}
+
+/* ホバーアニメーション強化 */
+.structure-card,
+.quick-link-card,
+.point-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.structure-card:hover,
+.quick-link-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.structure-card:hover .card-icon,
+.quick-link-card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* プログレスバーアニメーション */
+.quiz-progress-bar {
+    animation: progressBar 0.5s ease-out;
+}
+
+@keyframes progressBar {
+    from {
+        width: 0;
+    }
+}
+
+/* パルスアニメーション */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s ease-in-out infinite;
 }
 
 /* アイゼンハワー・マトリクス */
