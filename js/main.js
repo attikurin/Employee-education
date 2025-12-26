@@ -88,6 +88,24 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ========================================
+// 印刷ボタン
+// ========================================
+function printPage() {
+    window.print();
+}
+
+// 印刷ボタンの設定
+document.addEventListener('DOMContentLoaded', function() {
+    const printBtn = document.getElementById('printBtn');
+    
+    if (printBtn) {
+        printBtn.addEventListener('click', function() {
+            window.print();
+        });
+    }
+});
+
+// ========================================
 // ページトップへ戻るボタン
 // ========================================
 document.addEventListener('DOMContentLoaded', function() {
